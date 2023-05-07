@@ -164,5 +164,10 @@ class CrawLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CrawLangParser#print.
+    def visitPrint(self, ctx:CrawLangParser.PrintContext):
+        return self.visitChildren(ctx)
+
+
 
 del CrawLangParser

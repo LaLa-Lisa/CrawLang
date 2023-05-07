@@ -38,6 +38,7 @@ base_type
 
 statement
   : block
+  | print
   | assignment_statement
   | if_stmt
   | for_loop
@@ -107,7 +108,7 @@ primary_expr
   ;
 
 assignment
-  : (VALID_VARIABLE_NAME ASSIGN)? expr
+  : (variable_name=VALID_VARIABLE_NAME ASSIGN)? expr
   ;
 
 postfix_expr: primary_expr ( arg_list )?
@@ -127,7 +128,7 @@ mul_expr
   ;
 
 add_expr
-  : left=mul_expr ( ( PLUS | MINUS ) right=mul_expr )*
+  : mul_expr ( ( PLUS | MINUS ) mul_expr )*
   ;
 
 shift_expr
@@ -153,6 +154,10 @@ expr
 
 arg_list
   : LPAREN expr ( COMMA expr )* RPAREN
+  ;
+
+print
+  : 'print' LPAREN expr RPAREN SEMICOLON
   ;
 
 VALID_VARIABLE_NAME : [a-zA-Z] [a-zA-Z_0-9]* ;

@@ -287,5 +287,14 @@ class CrawLangListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CrawLangParser#print.
+    def enterPrint(self, ctx:CrawLangParser.PrintContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#print.
+    def exitPrint(self, ctx:CrawLangParser.PrintContext):
+        pass
+
+
 
 del CrawLangParser
