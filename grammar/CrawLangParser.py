@@ -249,6 +249,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitFunclist" ):
                 listener.exitFunclist(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunclist" ):
+                return visitor.visitFunclist(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -306,6 +312,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitFunction_def" ):
                 listener.exitFunction_def(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunction_def" ):
+                return visitor.visitFunction_def(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -359,6 +371,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFunc_header" ):
                 listener.exitFunc_header(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunc_header" ):
+                return visitor.visitFunc_header(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -417,6 +435,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFunc_name_decl" ):
                 listener.exitFunc_name_decl(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunc_name_decl" ):
+                return visitor.visitFunc_name_decl(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -490,6 +514,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitFormal_list" ):
                 listener.exitFormal_list(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFormal_list" ):
+                return visitor.visitFormal_list(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -545,6 +575,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitBase_type" ):
                 listener.exitBase_type(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBase_type" ):
+                return visitor.visitBase_type(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -612,6 +648,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitStatement" ):
                 listener.exitStatement(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStatement" ):
+                return visitor.visitStatement(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -704,6 +746,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitBlock" ):
                 listener.exitBlock(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBlock" ):
+                return visitor.visitBlock(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -784,6 +832,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitDecl" ):
                 listener.exitDecl(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDecl" ):
+                return visitor.visitDecl(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -846,6 +900,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitAssignment_statement" ):
                 listener.exitAssignment_statement(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssignment_statement" ):
+                return visitor.visitAssignment_statement(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -903,6 +963,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitIf_stmt" ):
                 listener.exitIf_stmt(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIf_stmt" ):
+                return visitor.visitIf_stmt(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -966,6 +1032,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitElse_part" ):
                 listener.exitElse_part(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitElse_part" ):
+                return visitor.visitElse_part(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1013,6 +1085,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFor_loop" ):
                 listener.exitFor_loop(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFor_loop" ):
+                return visitor.visitFor_loop(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1074,6 +1152,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitLoop_cntrl" ):
                 listener.exitLoop_cntrl(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLoop_cntrl" ):
+                return visitor.visitLoop_cntrl(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1126,6 +1210,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitLoop_init" ):
                 listener.exitLoop_init(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLoop_init" ):
+                return visitor.visitLoop_init(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1187,6 +1277,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitLoop_cond" ):
                 listener.exitLoop_cond(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLoop_cond" ):
+                return visitor.visitLoop_cond(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1243,6 +1339,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitLoop_incr" ):
                 listener.exitLoop_incr(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLoop_incr" ):
+                return visitor.visitLoop_incr(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1301,6 +1403,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitReturn_statement" ):
                 listener.exitReturn_statement(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitReturn_statement" ):
+                return visitor.visitReturn_statement(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1358,6 +1466,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitPrimary_expr" ):
                 listener.exitPrimary_expr(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPrimary_expr" ):
+                return visitor.visitPrimary_expr(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1429,6 +1543,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitAssignment" ):
                 listener.exitAssignment(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssignment" ):
+                return visitor.visitAssignment(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1485,6 +1605,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitPostfix_expr" ):
                 listener.exitPostfix_expr(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPostfix_expr" ):
+                return visitor.visitPostfix_expr(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1535,6 +1661,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitBoolneg_expr" ):
                 listener.exitBoolneg_expr(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBoolneg_expr" ):
+                return visitor.visitBoolneg_expr(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1591,6 +1723,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitSign_expr" ):
                 listener.exitSign_expr(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSign_expr" ):
+                return visitor.visitSign_expr(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1670,6 +1808,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitMul_expr" ):
                 listener.exitMul_expr(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMul_expr" ):
+                return visitor.visitMul_expr(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1714,6 +1858,8 @@ class CrawLangParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+            self.left = None # Mul_exprContext
+            self.right = None # Mul_exprContext
 
         def mul_expr(self, i:int=None):
             if i is None:
@@ -1745,6 +1891,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitAdd_expr" ):
                 listener.exitAdd_expr(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAdd_expr" ):
+                return visitor.visitAdd_expr(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1756,7 +1908,7 @@ class CrawLangParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 217
-            self.mul_expr()
+            localctx.left = self.mul_expr()
             self.state = 222
             self._errHandler.sync(self)
             _la = self._input.LA(1)
@@ -1769,7 +1921,7 @@ class CrawLangParser ( Parser ):
                     self._errHandler.reportMatch(self)
                     self.consume()
                 self.state = 219
-                self.mul_expr()
+                localctx.right = self.mul_expr()
                 self.state = 224
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
@@ -1819,6 +1971,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitShift_expr" ):
                 listener.exitShift_expr(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitShift_expr" ):
+                return visitor.visitShift_expr(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1907,6 +2065,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitRel_expr" ):
                 listener.exitRel_expr(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRel_expr" ):
+                return visitor.visitRel_expr(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1982,6 +2146,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitEq_expr" ):
                 listener.exitEq_expr(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEq_expr" ):
+                return visitor.visitEq_expr(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -2045,6 +2215,12 @@ class CrawLangParser ( Parser ):
             if hasattr( listener, "exitLmul_expr" ):
                 listener.exitLmul_expr(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLmul_expr" ):
+                return visitor.visitLmul_expr(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -2102,6 +2278,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitExpr" ):
                 listener.exitExpr(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpr" ):
+                return visitor.visitExpr(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -2172,6 +2354,12 @@ class CrawLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitArg_list" ):
                 listener.exitArg_list(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArg_list" ):
+                return visitor.visitArg_list(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 

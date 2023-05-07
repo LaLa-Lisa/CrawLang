@@ -127,7 +127,7 @@ mul_expr
   ;
 
 add_expr
-  : mul_expr ( ( PLUS | MINUS ) mul_expr )*
+  : left=mul_expr ( ( PLUS | MINUS ) right=mul_expr )*
   ;
 
 shift_expr

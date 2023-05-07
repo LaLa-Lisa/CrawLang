@@ -1,7 +1,7 @@
 from antlr4 import *
 from grammar.CrawLangLexer import CrawLangLexer
 from grammar.CrawLangParser import CrawLangParser
-
+from MyCrawLangVistor import MyCrawLangVisitor
 
 def main():
     input_stream = FileStream("code_sample.txt")
@@ -9,6 +9,9 @@ def main():
     stream = CommonTokenStream(lexer)
     parser = CrawLangParser(stream)
     tree = parser.funclist()
+    # evaluator
+    visitor = MyCrawLangVisitor()
+    output = visitor.visit(tree)
     print(tree.toStringTree(recog=parser))
 
 
