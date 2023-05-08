@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,38,298,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,40,298,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
@@ -36,7 +36,7 @@ def serializedATN():
         282,9,30,1,31,1,31,1,31,1,31,1,31,1,31,1,32,1,32,1,32,3,32,293,8,
         32,1,32,1,32,1,32,1,32,0,0,33,0,2,4,6,8,10,12,14,16,18,20,22,24,
         26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,0,6,
-        1,0,2,3,1,0,27,29,1,0,25,26,1,0,37,38,1,0,33,36,1,0,31,32,299,0,
+        1,0,2,4,1,0,29,31,1,0,27,28,1,0,39,40,1,0,35,38,1,0,33,34,299,0,
         70,1,0,0,0,2,76,1,0,0,0,4,80,1,0,0,0,6,87,1,0,0,0,8,98,1,0,0,0,10,
         100,1,0,0,0,12,111,1,0,0,0,14,121,1,0,0,0,16,123,1,0,0,0,18,133,
         1,0,0,0,20,144,1,0,0,0,22,147,1,0,0,0,24,156,1,0,0,0,26,159,1,0,
@@ -48,45 +48,45 @@ def serializedATN():
         1,0,0,0,68,67,1,0,0,0,69,72,1,0,0,0,70,68,1,0,0,0,70,71,1,0,0,0,
         71,73,1,0,0,0,72,70,1,0,0,0,73,74,3,4,2,0,74,75,5,0,0,1,75,1,1,0,
         0,0,76,77,3,6,3,0,77,78,3,16,8,0,78,3,1,0,0,0,79,81,3,12,6,0,80,
-        79,1,0,0,0,80,81,1,0,0,0,81,82,1,0,0,0,82,83,5,1,0,0,83,84,5,21,
-        0,0,84,85,5,22,0,0,85,86,3,16,8,0,86,5,1,0,0,0,87,88,3,8,4,0,88,
-        90,5,21,0,0,89,91,3,10,5,0,90,89,1,0,0,0,90,91,1,0,0,0,91,92,1,0,
-        0,0,92,93,5,22,0,0,93,7,1,0,0,0,94,99,5,15,0,0,95,96,3,12,6,0,96,
-        97,5,15,0,0,97,99,1,0,0,0,98,94,1,0,0,0,98,95,1,0,0,0,99,9,1,0,0,
-        0,100,101,3,12,6,0,101,108,5,15,0,0,102,103,5,19,0,0,103,104,3,12,
-        6,0,104,105,5,15,0,0,105,107,1,0,0,0,106,102,1,0,0,0,107,110,1,0,
+        79,1,0,0,0,80,81,1,0,0,0,81,82,1,0,0,0,82,83,5,1,0,0,83,84,5,23,
+        0,0,84,85,5,24,0,0,85,86,3,16,8,0,86,5,1,0,0,0,87,88,3,8,4,0,88,
+        90,5,23,0,0,89,91,3,10,5,0,90,89,1,0,0,0,90,91,1,0,0,0,91,92,1,0,
+        0,0,92,93,5,24,0,0,93,7,1,0,0,0,94,99,5,16,0,0,95,96,3,12,6,0,96,
+        97,5,16,0,0,97,99,1,0,0,0,98,94,1,0,0,0,98,95,1,0,0,0,99,9,1,0,0,
+        0,100,101,3,12,6,0,101,108,5,16,0,0,102,103,5,21,0,0,103,104,3,12,
+        6,0,104,105,5,16,0,0,105,107,1,0,0,0,106,102,1,0,0,0,107,110,1,0,
         0,0,108,106,1,0,0,0,108,109,1,0,0,0,109,11,1,0,0,0,110,108,1,0,0,
         0,111,112,7,0,0,0,112,13,1,0,0,0,113,122,3,16,8,0,114,122,3,62,31,
         0,115,122,3,20,10,0,116,122,3,22,11,0,117,122,3,26,13,0,118,122,
-        3,36,18,0,119,122,3,64,32,0,120,122,5,20,0,0,121,113,1,0,0,0,121,
+        3,36,18,0,119,122,3,64,32,0,120,122,5,22,0,0,121,113,1,0,0,0,121,
         114,1,0,0,0,121,115,1,0,0,0,121,116,1,0,0,0,121,117,1,0,0,0,121,
         118,1,0,0,0,121,119,1,0,0,0,121,120,1,0,0,0,122,15,1,0,0,0,123,128,
-        5,23,0,0,124,127,3,18,9,0,125,127,3,14,7,0,126,124,1,0,0,0,126,125,
+        5,25,0,0,124,127,3,18,9,0,125,127,3,14,7,0,126,124,1,0,0,0,126,125,
         1,0,0,0,127,130,1,0,0,0,128,126,1,0,0,0,128,129,1,0,0,0,129,131,
-        1,0,0,0,130,128,1,0,0,0,131,132,5,24,0,0,132,17,1,0,0,0,133,134,
-        3,12,6,0,134,139,5,15,0,0,135,136,5,19,0,0,136,138,5,15,0,0,137,
+        1,0,0,0,130,128,1,0,0,0,131,132,5,26,0,0,132,17,1,0,0,0,133,134,
+        3,12,6,0,134,139,5,16,0,0,135,136,5,21,0,0,136,138,5,16,0,0,137,
         135,1,0,0,0,138,141,1,0,0,0,139,137,1,0,0,0,139,140,1,0,0,0,140,
-        142,1,0,0,0,141,139,1,0,0,0,142,143,5,20,0,0,143,19,1,0,0,0,144,
-        145,3,40,20,0,145,146,5,20,0,0,146,21,1,0,0,0,147,148,5,4,0,0,148,
-        149,5,21,0,0,149,150,3,58,29,0,150,151,5,22,0,0,151,154,3,14,7,0,
+        142,1,0,0,0,141,139,1,0,0,0,142,143,5,22,0,0,143,19,1,0,0,0,144,
+        145,3,40,20,0,145,146,5,22,0,0,146,21,1,0,0,0,147,148,5,5,0,0,148,
+        149,5,23,0,0,149,150,3,58,29,0,150,151,5,24,0,0,151,154,3,14,7,0,
         152,155,3,24,12,0,153,155,1,0,0,0,154,152,1,0,0,0,154,153,1,0,0,
-        0,155,23,1,0,0,0,156,157,5,5,0,0,157,158,3,14,7,0,158,25,1,0,0,0,
-        159,160,5,6,0,0,160,161,3,28,14,0,161,162,3,14,7,0,162,27,1,0,0,
-        0,163,164,5,21,0,0,164,165,3,30,15,0,165,166,3,32,16,0,166,167,3,
-        34,17,0,167,168,5,22,0,0,168,29,1,0,0,0,169,174,5,20,0,0,170,171,
-        3,40,20,0,171,172,5,20,0,0,172,174,1,0,0,0,173,169,1,0,0,0,173,170,
-        1,0,0,0,174,31,1,0,0,0,175,180,5,20,0,0,176,177,3,58,29,0,177,178,
-        5,20,0,0,178,180,1,0,0,0,179,175,1,0,0,0,179,176,1,0,0,0,180,33,
+        0,155,23,1,0,0,0,156,157,5,6,0,0,157,158,3,14,7,0,158,25,1,0,0,0,
+        159,160,5,7,0,0,160,161,3,28,14,0,161,162,3,14,7,0,162,27,1,0,0,
+        0,163,164,5,23,0,0,164,165,3,30,15,0,165,166,3,32,16,0,166,167,3,
+        34,17,0,167,168,5,24,0,0,168,29,1,0,0,0,169,174,5,22,0,0,170,171,
+        3,40,20,0,171,172,5,22,0,0,172,174,1,0,0,0,173,169,1,0,0,0,173,170,
+        1,0,0,0,174,31,1,0,0,0,175,180,5,22,0,0,176,177,3,58,29,0,177,178,
+        5,22,0,0,178,180,1,0,0,0,179,175,1,0,0,0,179,176,1,0,0,0,180,33,
         1,0,0,0,181,184,1,0,0,0,182,184,3,40,20,0,183,181,1,0,0,0,183,182,
-        1,0,0,0,184,35,1,0,0,0,185,186,5,7,0,0,186,187,3,58,29,0,187,188,
-        5,20,0,0,188,37,1,0,0,0,189,196,5,15,0,0,190,196,5,16,0,0,191,192,
-        5,21,0,0,192,193,3,58,29,0,193,194,5,22,0,0,194,196,1,0,0,0,195,
+        1,0,0,0,184,35,1,0,0,0,185,186,5,8,0,0,186,187,3,58,29,0,187,188,
+        5,22,0,0,188,37,1,0,0,0,189,196,5,16,0,0,190,196,5,17,0,0,191,192,
+        5,23,0,0,192,193,3,58,29,0,193,194,5,24,0,0,194,196,1,0,0,0,195,
         189,1,0,0,0,195,190,1,0,0,0,195,191,1,0,0,0,196,39,1,0,0,0,197,198,
-        5,15,0,0,198,200,5,30,0,0,199,197,1,0,0,0,199,200,1,0,0,0,200,201,
-        1,0,0,0,201,202,3,58,29,0,202,41,1,0,0,0,203,205,5,8,0,0,204,203,
+        5,16,0,0,198,200,5,32,0,0,199,197,1,0,0,0,199,200,1,0,0,0,200,201,
+        1,0,0,0,201,202,3,58,29,0,202,41,1,0,0,0,203,205,5,9,0,0,204,203,
         1,0,0,0,205,208,1,0,0,0,206,204,1,0,0,0,206,207,1,0,0,0,207,209,
         1,0,0,0,208,206,1,0,0,0,209,210,3,38,19,0,210,43,1,0,0,0,211,215,
-        3,42,21,0,212,213,5,26,0,0,213,215,3,42,21,0,214,211,1,0,0,0,214,
+        3,42,21,0,212,213,5,28,0,0,213,215,3,42,21,0,214,211,1,0,0,0,214,
         212,1,0,0,0,215,45,1,0,0,0,216,221,3,44,22,0,217,218,7,1,0,0,218,
         220,3,44,22,0,219,217,1,0,0,0,220,223,1,0,0,0,221,219,1,0,0,0,221,
         222,1,0,0,0,222,47,1,0,0,0,223,221,1,0,0,0,224,229,3,46,23,0,225,
@@ -99,18 +99,18 @@ def serializedATN():
         53,1,0,0,0,247,245,1,0,0,0,248,253,3,52,26,0,249,250,7,5,0,0,250,
         252,3,52,26,0,251,249,1,0,0,0,252,255,1,0,0,0,253,251,1,0,0,0,253,
         254,1,0,0,0,254,55,1,0,0,0,255,253,1,0,0,0,256,261,3,54,27,0,257,
-        258,5,9,0,0,258,260,3,54,27,0,259,257,1,0,0,0,260,263,1,0,0,0,261,
+        258,5,10,0,0,258,260,3,54,27,0,259,257,1,0,0,0,260,263,1,0,0,0,261,
         259,1,0,0,0,261,262,1,0,0,0,262,57,1,0,0,0,263,261,1,0,0,0,264,269,
-        3,56,28,0,265,266,5,10,0,0,266,268,3,56,28,0,267,265,1,0,0,0,268,
+        3,56,28,0,265,266,5,11,0,0,266,268,3,56,28,0,267,265,1,0,0,0,268,
         271,1,0,0,0,269,267,1,0,0,0,269,270,1,0,0,0,270,274,1,0,0,0,271,
         269,1,0,0,0,272,274,3,64,32,0,273,264,1,0,0,0,273,272,1,0,0,0,274,
-        59,1,0,0,0,275,280,3,58,29,0,276,277,5,19,0,0,277,279,3,58,29,0,
+        59,1,0,0,0,275,280,3,58,29,0,276,277,5,21,0,0,277,279,3,58,29,0,
         278,276,1,0,0,0,279,282,1,0,0,0,280,278,1,0,0,0,280,281,1,0,0,0,
-        281,61,1,0,0,0,282,280,1,0,0,0,283,284,5,11,0,0,284,285,5,21,0,0,
-        285,286,3,58,29,0,286,287,5,22,0,0,287,288,5,20,0,0,288,63,1,0,0,
-        0,289,290,5,15,0,0,290,292,5,21,0,0,291,293,3,60,30,0,292,291,1,
-        0,0,0,292,293,1,0,0,0,293,294,1,0,0,0,294,295,5,22,0,0,295,296,5,
-        20,0,0,296,65,1,0,0,0,28,68,70,80,90,98,108,121,126,128,139,154,
+        281,61,1,0,0,0,282,280,1,0,0,0,283,284,5,12,0,0,284,285,5,23,0,0,
+        285,286,3,58,29,0,286,287,5,24,0,0,287,288,5,22,0,0,288,63,1,0,0,
+        0,289,290,5,16,0,0,290,292,5,23,0,0,291,293,3,60,30,0,292,291,1,
+        0,0,0,292,293,1,0,0,0,293,294,1,0,0,0,294,295,5,24,0,0,295,296,5,
+        22,0,0,296,65,1,0,0,0,28,68,70,80,90,98,108,121,126,128,139,154,
         173,179,183,195,199,206,214,221,229,237,245,253,261,269,273,280,
         292
     ]
@@ -125,22 +125,23 @@ class CrawLangParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'main'", "'char'", "'int'", "'if'", "'else'", 
-                     "'for'", "'return'", "'not'", "'and'", "'or'", "'print'", 
+    literalNames = [ "<INVALID>", "'main'", "'char'", "'int'", "'float'", 
+                     "'if'", "'else'", "'for'", "'return'", "'not'", "'and'", 
+                     "'or'", "'print'", "<INVALID>", "<INVALID>", "<INVALID>", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "','", "';'", 
-                     "'('", "')'", "'{'", "'}'", "'+'", "'-'", "'*'", "'/'", 
-                     "'%'", "'='", "'=='", "'!='", "'<'", "'>'", "'<='", 
-                     "'>='", "'<<'", "'>>'" ]
+                     "<INVALID>", "','", "';'", "'('", "')'", "'{'", "'}'", 
+                     "'+'", "'-'", "'*'", "'/'", "'%'", "'='", "'=='", "'!='", 
+                     "'<'", "'>'", "'<='", "'>='", "'<<'", "'>>'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "SPACE", "COMMENT_BLOCK", "COMMENT_LINE", "VALID_VARIABLE_NAME", 
-                      "LITERAL", "INT", "CHAR", "COMMA", "SEMICOLON", "LPAREN", 
-                      "RPAREN", "LCURL", "RCURL", "PLUS", "MINUS", "TIMES", 
-                      "DIVIDE", "MOD", "ASSIGN", "EQ", "NEQ", "LTHAN", "GTHAN", 
-                      "LEQ", "GEQ", "SHIFT_LEFT", "SHIFT_RIGHT" ]
+                      "<INVALID>", "SPACE", "COMMENT_BLOCK", "COMMENT_LINE", 
+                      "VALID_VARIABLE_NAME", "LITERAL", "INT", "CHAR", "FLOAT", 
+                      "COMMA", "SEMICOLON", "LPAREN", "RPAREN", "LCURL", 
+                      "RCURL", "PLUS", "MINUS", "TIMES", "DIVIDE", "MOD", 
+                      "ASSIGN", "EQ", "NEQ", "LTHAN", "GTHAN", "LEQ", "GEQ", 
+                      "SHIFT_LEFT", "SHIFT_RIGHT" ]
 
     RULE_funclist = 0
     RULE_function_def = 1
@@ -197,33 +198,35 @@ class CrawLangParser ( Parser ):
     T__8=9
     T__9=10
     T__10=11
-    SPACE=12
-    COMMENT_BLOCK=13
-    COMMENT_LINE=14
-    VALID_VARIABLE_NAME=15
-    LITERAL=16
-    INT=17
-    CHAR=18
-    COMMA=19
-    SEMICOLON=20
-    LPAREN=21
-    RPAREN=22
-    LCURL=23
-    RCURL=24
-    PLUS=25
-    MINUS=26
-    TIMES=27
-    DIVIDE=28
-    MOD=29
-    ASSIGN=30
-    EQ=31
-    NEQ=32
-    LTHAN=33
-    GTHAN=34
-    LEQ=35
-    GEQ=36
-    SHIFT_LEFT=37
-    SHIFT_RIGHT=38
+    T__11=12
+    SPACE=13
+    COMMENT_BLOCK=14
+    COMMENT_LINE=15
+    VALID_VARIABLE_NAME=16
+    LITERAL=17
+    INT=18
+    CHAR=19
+    FLOAT=20
+    COMMA=21
+    SEMICOLON=22
+    LPAREN=23
+    RPAREN=24
+    LCURL=25
+    RCURL=26
+    PLUS=27
+    MINUS=28
+    TIMES=29
+    DIVIDE=30
+    MOD=31
+    ASSIGN=32
+    EQ=33
+    NEQ=34
+    LTHAN=35
+    GTHAN=36
+    LEQ=37
+    GEQ=38
+    SHIFT_LEFT=39
+    SHIFT_RIGHT=40
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -429,7 +432,7 @@ class CrawLangParser ( Parser ):
             self.state = 80
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==2 or _la==3:
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 28) != 0):
                 self.state = 79
                 self.base_type()
 
@@ -506,7 +509,7 @@ class CrawLangParser ( Parser ):
             self.state = 90
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==2 or _la==3:
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 28) != 0):
                 self.state = 89
                 self.formal_list()
 
@@ -564,12 +567,12 @@ class CrawLangParser ( Parser ):
             self.state = 98
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [15]:
+            if token in [16]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 94
                 self.match(CrawLangParser.VALID_VARIABLE_NAME)
                 pass
-            elif token in [2, 3]:
+            elif token in [2, 3, 4]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 95
                 self.base_type()
@@ -648,7 +651,7 @@ class CrawLangParser ( Parser ):
             self.state = 108
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==19:
+            while _la==21:
                 self.state = 102
                 self.match(CrawLangParser.COMMA)
                 self.state = 103
@@ -705,7 +708,7 @@ class CrawLangParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 111
             _la = self._input.LA(1)
-            if not(_la==2 or _la==3):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 28) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -902,15 +905,15 @@ class CrawLangParser ( Parser ):
             self.state = 128
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 78744028) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 314774460) != 0):
                 self.state = 126
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [2, 3]:
+                if token in [2, 3, 4]:
                     self.state = 124
                     self.decl()
                     pass
-                elif token in [4, 6, 7, 8, 11, 15, 16, 20, 21, 23, 26]:
+                elif token in [5, 7, 8, 9, 12, 16, 17, 22, 23, 25, 28]:
                     self.state = 125
                     self.statement()
                     pass
@@ -992,7 +995,7 @@ class CrawLangParser ( Parser ):
             self.state = 139
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==19:
+            while _la==21:
                 self.state = 135
                 self.match(CrawLangParser.COMMA)
                 self.state = 136
@@ -1117,7 +1120,7 @@ class CrawLangParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 147
-            self.match(CrawLangParser.T__3)
+            self.match(CrawLangParser.T__4)
             self.state = 148
             self.match(CrawLangParser.LPAREN)
             self.state = 149
@@ -1185,7 +1188,7 @@ class CrawLangParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 156
-            self.match(CrawLangParser.T__4)
+            self.match(CrawLangParser.T__5)
             self.state = 157
             self.statement()
         except RecognitionException as re:
@@ -1239,7 +1242,7 @@ class CrawLangParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 159
-            self.match(CrawLangParser.T__5)
+            self.match(CrawLangParser.T__6)
             self.state = 160
             self.loop_cntrl()
             self.state = 161
@@ -1365,12 +1368,12 @@ class CrawLangParser ( Parser ):
             self.state = 173
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [20]:
+            if token in [22]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 169
                 self.match(CrawLangParser.SEMICOLON)
                 pass
-            elif token in [8, 15, 16, 21, 26]:
+            elif token in [9, 16, 17, 23, 28]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 170
                 self.assignment()
@@ -1431,12 +1434,12 @@ class CrawLangParser ( Parser ):
             self.state = 179
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [20]:
+            if token in [22]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 175
                 self.match(CrawLangParser.SEMICOLON)
                 pass
-            elif token in [8, 15, 16, 21, 26]:
+            elif token in [9, 16, 17, 23, 28]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 176
                 self.expr()
@@ -1494,11 +1497,11 @@ class CrawLangParser ( Parser ):
             self.state = 183
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [22]:
+            if token in [24]:
                 self.enterOuterAlt(localctx, 1)
 
                 pass
-            elif token in [8, 15, 16, 21, 26]:
+            elif token in [9, 16, 17, 23, 28]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 182
                 self.assignment()
@@ -1556,7 +1559,7 @@ class CrawLangParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 185
-            self.match(CrawLangParser.T__6)
+            self.match(CrawLangParser.T__7)
             self.state = 186
             self.expr()
             self.state = 187
@@ -1621,17 +1624,17 @@ class CrawLangParser ( Parser ):
             self.state = 195
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [15]:
+            if token in [16]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 189
                 self.match(CrawLangParser.VALID_VARIABLE_NAME)
                 pass
-            elif token in [16]:
+            elif token in [17]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 190
                 self.match(CrawLangParser.LITERAL)
                 pass
-            elif token in [21]:
+            elif token in [23]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 191
                 self.match(CrawLangParser.LPAREN)
@@ -1757,9 +1760,9 @@ class CrawLangParser ( Parser ):
             self.state = 206
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==8:
+            while _la==9:
                 self.state = 203
-                self.match(CrawLangParser.T__7)
+                self.match(CrawLangParser.T__8)
                 self.state = 208
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
@@ -1817,12 +1820,12 @@ class CrawLangParser ( Parser ):
             self.state = 214
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [8, 15, 16, 21]:
+            if token in [9, 16, 17, 23]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 211
                 self.boolneg_expr()
                 pass
-            elif token in [26]:
+            elif token in [28]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 212
                 self.match(CrawLangParser.MINUS)
@@ -1905,10 +1908,10 @@ class CrawLangParser ( Parser ):
             self.state = 221
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 939524096) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 3758096384) != 0):
                 self.state = 217
                 _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 939524096) != 0)):
+                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 3758096384) != 0)):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -1986,10 +1989,10 @@ class CrawLangParser ( Parser ):
             self.state = 229
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==25 or _la==26:
+            while _la==27 or _la==28:
                 self.state = 225
                 _la = self._input.LA(1)
-                if not(_la==25 or _la==26):
+                if not(_la==27 or _la==28):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -2067,10 +2070,10 @@ class CrawLangParser ( Parser ):
             self.state = 237
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==37 or _la==38:
+            while _la==39 or _la==40:
                 self.state = 233
                 _la = self._input.LA(1)
-                if not(_la==37 or _la==38):
+                if not(_la==39 or _la==40):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -2160,10 +2163,10 @@ class CrawLangParser ( Parser ):
             self.state = 245
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 128849018880) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 515396075520) != 0):
                 self.state = 241
                 _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 128849018880) != 0)):
+                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 515396075520) != 0)):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -2241,10 +2244,10 @@ class CrawLangParser ( Parser ):
             self.state = 253
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==31 or _la==32:
+            while _la==33 or _la==34:
                 self.state = 249
                 _la = self._input.LA(1)
-                if not(_la==31 or _la==32):
+                if not(_la==33 or _la==34):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
@@ -2310,9 +2313,9 @@ class CrawLangParser ( Parser ):
             self.state = 261
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==9:
+            while _la==10:
                 self.state = 257
-                self.match(CrawLangParser.T__8)
+                self.match(CrawLangParser.T__9)
                 self.state = 258
                 self.eq_expr()
                 self.state = 263
@@ -2382,9 +2385,9 @@ class CrawLangParser ( Parser ):
                 self.state = 269
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                while _la==10:
+                while _la==11:
                     self.state = 265
-                    self.match(CrawLangParser.T__9)
+                    self.match(CrawLangParser.T__10)
                     self.state = 266
                     self.lmul_expr()
                     self.state = 271
@@ -2461,7 +2464,7 @@ class CrawLangParser ( Parser ):
             self.state = 280
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==19:
+            while _la==21:
                 self.state = 276
                 self.match(CrawLangParser.COMMA)
                 self.state = 277
@@ -2526,7 +2529,7 @@ class CrawLangParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 283
-            self.match(CrawLangParser.T__10)
+            self.match(CrawLangParser.T__11)
             self.state = 284
             self.match(CrawLangParser.LPAREN)
             self.state = 285
@@ -2601,7 +2604,7 @@ class CrawLangParser ( Parser ):
             self.state = 292
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 69304576) != 0):
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 277021184) != 0):
                 self.state = 291
                 self.arg_list()
 

@@ -41,7 +41,7 @@ formal_list
 
 // типы (лол)
 base_type
-  : ( 'char' | 'int' )
+  : ( 'char' | 'int' | 'float')
   ;
 
 statement
@@ -172,11 +172,12 @@ function_call
 
 VALID_VARIABLE_NAME : [a-zA-Z] [a-zA-Z_0-9]* ;
 
-LITERAL: (INT | CHAR);
+LITERAL: (INT | CHAR | FLOAT);
 
 // типы данных нашего языка
 INT : [0-9]+;
 CHAR : [a-zA-Z];
+FLOAT : [0-9]+([.][0-9]+)?;
 
 COMMA : ',' ;
 SEMICOLON  : ';' ;

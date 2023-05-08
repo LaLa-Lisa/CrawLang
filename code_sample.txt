@@ -2,14 +2,26 @@
 c = 1000;
 int my_fun(int param) {
     a = 18 + 42 * 3;
-    b = 77 / 7;
+    b = 77 / 6;
     print( a + b  + param );
     return 10;
-    print(222);
+}
+int fun_for() {
+    print(111111111111);
+    sum = 0;
+    a = 0;
+    b = 1;
+    for (i=0;i<10;i=i+1) {
+        fib = a + b;
+        print(fib);
+        a = b;
+        b = fib;
+    }
+    print(sum);
 }
 
 int main() {
-    print(c);
     b = my_fun( 5 );
     print(b);
+    fun_for();
 }

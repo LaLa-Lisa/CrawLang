@@ -4,7 +4,7 @@ from grammar.CrawLangVisitor import CrawLangVisitor
 
 
 class LangMemory:
-    base_types = ['int', 'char']
+    base_types = ['int', 'char', 'float']
 
     global_variables = dict()
     function_scope = list()
@@ -14,8 +14,11 @@ class LangMemory:
     @classmethod
     def check_variable(cls, variable_name: str):
         if len(cls.function_scope):
-            if cls.function_scope[-1].get(variable_name) is not None:
-                return cls.function_scope[-1][variable_name]
+            for for_s in cls.function_scope[-1]['for']:
+                if for_s.get(variable_name) is not None:
+                    return for_s[variable_name]
+            if cls.function_scope[-1]['variables'].get(variable_name) is not None:
+                return cls.function_scope[-1]['variables'][variable_name]
         if cls.global_variables.get(variable_name) is not None:
             return cls.global_variables[variable_name]
         return None
@@ -23,7 +26,16 @@ class LangMemory:
     @classmethod
     def assign_variable(cls, variable_name: str, value):
         if len(cls.function_scope):
-            cls.function_scope[-1][variable_name] = value
+            for for_s in cls.function_scope[-1]['for']:
+                if for_s.get(variable_name) is not None:
+                    for_s[variable_name] = value
+                    return
+
+            if cls.function_scope[-1]['variables'].get(variable_name) is not None \
+                    or not len(cls.function_scope[-1]['for']):
+                cls.function_scope[-1]['variables'][variable_name] = value
+            else:
+                cls.function_scope[-1]['for'][-1][variable_name] = value
         else:
             cls.global_variables[variable_name] = value
 
@@ -45,11 +57,19 @@ class LangMemory:
 
     @classmethod
     def open_function_scope(cls, scope):
-        cls.function_scope.append(scope)
+        cls.function_scope.append({'variables': scope, 'for': []})
 
     @classmethod
     def close_function_scope(cls):
         cls.function_scope.pop()
+
+    @classmethod
+    def open_for_scope(cls, scope):
+        cls.function_scope[-1]['for'].append(scope)
+
+    @classmethod
+    def close_for_scope(cls):
+        cls.function_scope[-1]['for'].pop()
 
 class MyCrawLangVisitor(CrawLangVisitor):
     # Visit a parse tree produced by CrawLangParser#funclist.
@@ -177,12 +197,18 @@ class MyCrawLangVisitor(CrawLangVisitor):
         assert for_keyword == 'for'
         loop_cntrl = next(child_gen)
         loop_statement = next(child_gen)
-        # эмитация цикла
+        # открываем область видимости фора
+        new_scope = dict()
+        new_scope['initialization'] = True
+        LangMemory.open_for_scope(new_scope)
+        # имитация цикла
         while self.visit(loop_cntrl):
             self.visit(loop_statement)
 
+        # закрываем область видимости фора
+        LangMemory.close_for_scope()
         # из цикла ничего не возвращаем
-        return self.visitChildren(ctx)
+        return None
 
     # Visit a parse tree produced by CrawLangParser#loop_cntrl.
     def visitLoop_cntrl(self, ctx: CrawLangParser.Loop_cntrlContext):
@@ -197,18 +223,25 @@ class MyCrawLangVisitor(CrawLangVisitor):
         rparen_keyword = next(child_gen).getText()
         assert rparen_keyword == ')'
 
+        if LangMemory.check_variable('initialization'):
+            self.visit(loop_init)
+            LangMemory.assign_variable('initialization', False)
+        else:
+            self.visit(loop_incr)
 
         # нужно вернуть нужна ли остановка
         return self.visit(loop_cond)
 
     # Visit a parse tree produced by CrawLangParser#loop_init.
     def visitLoop_init(self, ctx: CrawLangParser.Loop_initContext):
-        LangMemory.check_variable("heh")
         return self.visitChildren(ctx)
 
     # Visit a parse tree produced by CrawLangParser#loop_cond.
     def visitLoop_cond(self, ctx: CrawLangParser.Loop_condContext):
-        return self.visitChildren(ctx)
+        child_gen = next(ctx.getChildren())
+        if child_gen.getText() == ';':
+            return True
+        return self.visit(child_gen)
 
     # Visit a parse tree produced by CrawLangParser#loop_incr.
     def visitLoop_incr(self, ctx: CrawLangParser.Loop_incrContext):
@@ -229,7 +262,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
         exist_val = LangMemory.check_variable(name)
         if exist_val is not None:
             return exist_val
-        return int(ctx.getText())
+        return float(ctx.getText())
 
     # Visit a parse tree produced by CrawLangParser#assignment.
     def visitAssignment(self, ctx: CrawLangParser.AssignmentContext):
