@@ -8,8 +8,7 @@ COMMENT_LINE:  '//' .*? '\r\n'  -> channel(HIDDEN);
 // точка входа в программу (я бы переименовал)
 funclist
   :
-  ( statement )*
-  ( function_def )*
+  ( statement | function_def)*
   main_func
   EOF
   ;
@@ -58,7 +57,7 @@ statement
 
 // блок с фигурными скобочками
 block
-  : LCURL (decl)* (statement)* RCURL
+  : LCURL (decl | statement)* RCURL
   ;
 
 // деклорация переменных
@@ -120,8 +119,7 @@ assignment
   : (variable_name=VALID_VARIABLE_NAME ASSIGN)? expr
   ;
 
-postfix_expr: primary_expr ( arg_list )?
-            ;
+postfix_expr: primary_expr;
 
 boolneg_expr
   : ( 'not' )* postfix_expr
@@ -162,7 +160,7 @@ expr
 
 
 arg_list
-  : LPAREN expr ( COMMA expr )* RPAREN
+  : expr ( COMMA expr )*
   ;
 
 print
@@ -171,7 +169,7 @@ print
 
 //вызов функции
 function_call
-  : VALID_VARIABLE_NAME LPAREN (VALID_VARIABLE_NAME ( COMMA VALID_VARIABLE_NAME )*)? RPAREN SEMICOLON
+  : VALID_VARIABLE_NAME LPAREN (arg_list)? RPAREN SEMICOLON
   ;
 
 VALID_VARIABLE_NAME : [a-zA-Z] [a-zA-Z_0-9]* ;

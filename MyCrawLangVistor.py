@@ -28,14 +28,19 @@ class LangMemory:
 
 
     @classmethod
-    def add_function(cls, fun_name, block):
+    def add_function(cls, fun_name, block, arg_list):
         assert cls.defined_functions.get(fun_name) is None
-        cls.defined_functions[fun_name] = block
+        cls.defined_functions[fun_name] = {'block': block, 'arg_list': arg_list}
 
     @classmethod
     def call_function(cls, fun_name):
         assert cls.defined_functions.get(fun_name) is not None
-        return cls.defined_functions[fun_name]
+        return cls.defined_functions[fun_name]['block']
+
+    @classmethod
+    def get_function_arg_list(cls, fun_name):
+        assert cls.defined_functions.get(fun_name) is not None
+        return cls.defined_functions[fun_name]['arg_list']
 
     @classmethod
     def open_function_scope(cls, scope):
@@ -53,15 +58,22 @@ class MyCrawLangVisitor(CrawLangVisitor):
     # Visit a parse tree produced by CrawLangParser#function_def.
     def visitFunction_def(self, ctx: CrawLangParser.Function_defContext):
         child_gen = ctx.getChildren()
-        fun_name = self.visit(next(child_gen))
+        fun_name, arg_list = self.visit(next(child_gen))
         block = next(child_gen)
-        LangMemory.add_function(fun_name, block)
+        LangMemory.add_function(fun_name, block, arg_list)
         return None
 
     # Visit a parse tree produced by CrawLangParser#func_header.
     def visitFunc_header(self, ctx: CrawLangParser.Func_headerContext):
         child_gen = ctx.getChildren()
-        return self.visit(next(child_gen))
+        func_name = self.visit(next(child_gen))
+        lparen_keyword = next(child_gen).getText()
+        assert lparen_keyword == '('
+        arg_list = None
+        arg_child = next(child_gen)
+        if arg_child.getText() != ')':
+            arg_list = self.visit(arg_child)
+        return func_name, arg_list
 
     # Visit a parse tree produced by CrawLangParser#func_name_decl.
     def visitFunc_name_decl(self, ctx: CrawLangParser.Func_name_declContext):
@@ -75,10 +87,25 @@ class MyCrawLangVisitor(CrawLangVisitor):
     def visitFunction_call(self, ctx: CrawLangParser.Function_callContext):
         child_gen = ctx.getChildren()
         name = next(child_gen).getText()
+
+        lparen_keyword = next(child_gen).getText()
+        assert lparen_keyword == '('
+
         # область видимости открывается
         new_scope = dict()
         LangMemory.open_function_scope(new_scope)
+
         # переменные из списка аргументов добавляются в область видимости
+        args_child = next(child_gen)
+        args_values = None
+        if args_child.getText() != ')':
+            args_values = self.visit(args_child)
+            args_names = LangMemory.get_function_arg_list(name)
+            assert len(args_values) == len(args_names)
+            for v_name, v_value in zip(args_names, args_values):
+                LangMemory.assign_variable(v_name, v_value)
+
+        # вызов функции
         fun_block = LangMemory.call_function(name)
         self.visit(fun_block)
         # область видимости закрывается
@@ -87,7 +114,12 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#formal_list.
     def visitFormal_list(self, ctx: CrawLangParser.Formal_listContext):
-        return self.visitChildren(ctx)
+        arg_list = []
+        for child in ctx.getChildren():
+            value = child.getText();
+            if value != ',' and value not in LangMemory.base_types:
+                arg_list.append(value)
+        return arg_list
 
     # Visit a parse tree produced by CrawLangParser#base_type.
     def visitBase_type(self, ctx: CrawLangParser.Base_typeContext):
@@ -334,7 +366,12 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#arg_list.
     def visitArg_list(self, ctx: CrawLangParser.Arg_listContext):
-        return self.visitChildren(ctx)
+        arg_list = []
+        for child in ctx.getChildren():
+            if child.getText() != ',':
+                arg_list.append(self.visit(child))
+        return arg_list
+
 
     # Visit a parse tree produced by CrawLangParser#print.
     def visitPrint(self, ctx:CrawLangParser.PrintContext):

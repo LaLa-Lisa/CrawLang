@@ -1,13 +1,13 @@
 //heh
 c = 1000;
-int my_fun() {
+int my_fun(int param) {
     a = 18 + 42 * 3;
     b = 77 / 7;
-    print( a + b );
+    print( a + b  + param );
 }
 
 int main() {
     print(c);
-    my_fun();
+    my_fun( 5 );
     //print(b);
 }
