@@ -119,7 +119,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
     def visitFormal_list(self, ctx: CrawLangParser.Formal_listContext):
         arg_list = []
         for child in ctx.getChildren():
-            value = child.getText();
+            value = child.getText()
             if value != ',' and value not in LangMemory.base_types:
                 arg_list.append(value)
         return arg_list
@@ -151,7 +151,20 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#if_stmt.
     def visitIf_stmt(self, ctx: CrawLangParser.If_stmtContext):
-        return self.visitChildren(ctx)
+        l = ctx.getChildren()
+        if_clause = next(l)
+        if_clause = next(l)
+        if_clause = next(l)
+        expr_ = next(l)
+        expr_ = next(l)
+        if self.visitChildren(if_clause):
+            return self.visit(expr_)
+
+        try:
+            else_clause = next(l)
+            return self.visit(else_clause)
+        except:
+            return
 
     # Visit a parse tree produced by CrawLangParser#else_part.
     def visitElse_part(self, ctx: CrawLangParser.Else_partContext):
