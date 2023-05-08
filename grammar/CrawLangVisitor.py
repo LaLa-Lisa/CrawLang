@@ -114,11 +114,6 @@ class CrawLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CrawLangParser#postfix_expr.
-    def visitPostfix_expr(self, ctx:CrawLangParser.Postfix_exprContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by CrawLangParser#boolneg_expr.
     def visitBoolneg_expr(self, ctx:CrawLangParser.Boolneg_exprContext):
         return self.visitChildren(ctx)

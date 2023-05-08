@@ -10,6 +10,7 @@ class LangMemory:
     function_scope = list()
     defined_functions = dict()
 
+    # вернёт переменную если она есть None в противном случае
     @classmethod
     def check_variable(cls, variable_name: str):
         if len(cls.function_scope):
@@ -94,6 +95,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
         # область видимости открывается
         new_scope = dict()
         LangMemory.open_function_scope(new_scope)
+        new_scope['return'] = None  # добавил переменную для ретурна
 
         # переменные из списка аргументов добавляются в область видимости
         args_child = next(child_gen)
@@ -109,8 +111,9 @@ class MyCrawLangVisitor(CrawLangVisitor):
         fun_block = LangMemory.call_function(name)
         self.visit(fun_block)
         # область видимости закрывается
+        return_val = LangMemory.check_variable('return')
         LangMemory.close_function_scope()
-        return None
+        return return_val
 
     # Visit a parse tree produced by CrawLangParser#formal_list.
     def visitFormal_list(self, ctx: CrawLangParser.Formal_listContext):
@@ -131,7 +134,12 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#block.
     def visitBlock(self, ctx: CrawLangParser.BlockContext):
-        return self.visitChildren(ctx)
+        for child in ctx.getChildren():
+            self.visit(child)
+            text = child.getText()
+            if len(text) > 6 and text[0:6] == 'return':
+                return
+        return
 
     # Visit a parse tree produced by CrawLangParser#decl.
     def visitDecl(self, ctx: CrawLangParser.DeclContext):
@@ -195,6 +203,11 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#return_statement.
     def visitReturn_statement(self, ctx: CrawLangParser.Return_statementContext):
+        child_gen = ctx.getChildren()
+        return_str = next(child_gen).getText()
+        assert return_str == 'return'
+        return_val = self.visit(next(child_gen))
+        LangMemory.assign_variable('return', return_val)
         return self.visitChildren(ctx)
 
     # Visit a parse tree produced by CrawLangParser#primary_expr.
@@ -220,10 +233,6 @@ class MyCrawLangVisitor(CrawLangVisitor):
                 new_value = value
                 save_name = child.getText()
         return new_value
-
-    # Visit a parse tree produced by CrawLangParser#postfix_expr.
-    def visitPostfix_expr(self, ctx: CrawLangParser.Postfix_exprContext):
-        return self.visitChildren(ctx)
 
     # Visit a parse tree produced by CrawLangParser#boolneg_expr.
     def visitBoolneg_expr(self, ctx: CrawLangParser.Boolneg_exprContext):

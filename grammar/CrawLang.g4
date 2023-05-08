@@ -116,13 +116,11 @@ primary_expr
   ;
 
 assignment
-  : (variable_name=VALID_VARIABLE_NAME ASSIGN)? expr
+  : (VALID_VARIABLE_NAME ASSIGN)? expr
   ;
 
-postfix_expr: primary_expr;
-
 boolneg_expr
-  : ( 'not' )* postfix_expr
+  : ( 'not' )* primary_expr
   ;
 
 sign_expr
@@ -155,7 +153,7 @@ lmul_expr
   ;
 
 expr
-  : lmul_expr ('or' lmul_expr)*
+  : (lmul_expr ('or' lmul_expr)* ) | function_call
   ;
 
 

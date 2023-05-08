@@ -197,15 +197,6 @@ class CrawLangListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CrawLangParser#postfix_expr.
-    def enterPostfix_expr(self, ctx:CrawLangParser.Postfix_exprContext):
-        pass
-
-    # Exit a parse tree produced by CrawLangParser#postfix_expr.
-    def exitPostfix_expr(self, ctx:CrawLangParser.Postfix_exprContext):
-        pass
-
-
     # Enter a parse tree produced by CrawLangParser#boolneg_expr.
     def enterBoolneg_expr(self, ctx:CrawLangParser.Boolneg_exprContext):
         pass
