@@ -4,7 +4,16 @@ from grammar.CrawLangVisitor import CrawLangVisitor
 
 
 class LangMemory:
-    variables = dict()
+    global_variables = dict()
+    function_scope = list()
+
+    def check_variable(self, variable_name: str):
+        if len(self.function_scope):
+            if self.function_scope[-1].get(variable_name) is not None:
+                return True
+        if self.global_variables.get(variable_name) is not None:
+            return True
+        return False
 
 class MyCrawLangVisitor(CrawLangVisitor):
     # Visit a parse tree produced by CrawLangParser#funclist.
@@ -57,14 +66,38 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#for_loop.
     def visitFor_loop(self, ctx: CrawLangParser.For_loopContext):
+        child_gen = ctx.getChildren()
+        for_keyword = next(child_gen).getText()
+        assert for_keyword == 'for'
+        loop_cntrl = next(child_gen)
+        loop_statement = next(child_gen)
+        # эмитация цикла
+        while self.visit(loop_cntrl):
+            self.visit(loop_statement)
+
+        # из цикла ничего не возвращаем
         return self.visitChildren(ctx)
 
     # Visit a parse tree produced by CrawLangParser#loop_cntrl.
     def visitLoop_cntrl(self, ctx: CrawLangParser.Loop_cntrlContext):
-        return self.visitChildren(ctx)
+        child_gen = ctx.getChildren()
+        lparen_keyword = next(child_gen).getText()
+        assert lparen_keyword == '('
+
+        loop_init = next(child_gen)
+        loop_cond = next(child_gen)
+        loop_incr = next(child_gen)
+
+        rparen_keyword = next(child_gen).getText()
+        assert rparen_keyword == ')'
+
+
+        # нужно вернуть нужна ли остановка
+        return self.visit(loop_cond)
 
     # Visit a parse tree produced by CrawLangParser#loop_init.
     def visitLoop_init(self, ctx: CrawLangParser.Loop_initContext):
+        LangMemory.check_variable("heh")
         return self.visitChildren(ctx)
 
     # Visit a parse tree produced by CrawLangParser#loop_cond.
@@ -81,6 +114,9 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#primary_expr.
     def visitPrimary_expr(self, ctx: CrawLangParser.Primary_exprContext):
+        name = ctx.getText()
+        if LangMemory.global_variables.get(name) is not None:
+            return LangMemory.global_variables[name]
         return int(ctx.getText())
 
     # Visit a parse tree produced by CrawLangParser#assignment.
@@ -94,7 +130,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
                 do_assignment = True
             else:
                 if do_assignment:
-                    LangMemory().variables[save_name] = value
+                    LangMemory().global_variables[save_name] = value
                 new_value = value
                 save_name = child.getText()
         return new_value

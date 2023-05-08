@@ -7,12 +7,21 @@ COMMENT_LINE:  '//' .*? '\r\n'  -> channel(HIDDEN);
 
 // точка входа в программу (я бы переименовал)
 funclist
-  : ( function_def )* EOF
+  :
+  ( statement )*
+  ( function_def )*
+  main_func
+  EOF
   ;
 
 // обьявление функции
 function_def
   : func_header block
+  ;
+
+//главная функция
+main_func
+  : (base_type)? 'main' LPAREN block RPAREN
   ;
 
 // заголовок функции (тип, имя и лист аргументов)
@@ -43,9 +52,9 @@ statement
   | if_stmt
   | for_loop
   | return_statement
+  | function_call
   | SEMICOLON
   ;
-
 
 // блок с фигурными скобочками
 block
@@ -158,6 +167,11 @@ arg_list
 
 print
   : 'print' LPAREN expr RPAREN SEMICOLON
+  ;
+
+//вызов функции
+function_call
+  : VALID_VARIABLE_NAME LPAREN (VALID_VARIABLE_NAME ( COMMA VALID_VARIABLE_NAME )*)? RPAREN SEMICOLON
   ;
 
 VALID_VARIABLE_NAME : [a-zA-Z] [a-zA-Z_0-9]* ;

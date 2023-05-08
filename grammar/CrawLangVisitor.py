@@ -19,6 +19,11 @@ class CrawLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CrawLangParser#main_func.
+    def visitMain_func(self, ctx:CrawLangParser.Main_funcContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CrawLangParser#func_header.
     def visitFunc_header(self, ctx:CrawLangParser.Func_headerContext):
         return self.visitChildren(ctx)
@@ -166,6 +171,11 @@ class CrawLangVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by CrawLangParser#print.
     def visitPrint(self, ctx:CrawLangParser.PrintContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#function_call.
+    def visitFunction_call(self, ctx:CrawLangParser.Function_callContext):
         return self.visitChildren(ctx)
 
 

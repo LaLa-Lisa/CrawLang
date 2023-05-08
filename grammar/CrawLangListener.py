@@ -26,6 +26,15 @@ class CrawLangListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CrawLangParser#main_func.
+    def enterMain_func(self, ctx:CrawLangParser.Main_funcContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#main_func.
+    def exitMain_func(self, ctx:CrawLangParser.Main_funcContext):
+        pass
+
+
     # Enter a parse tree produced by CrawLangParser#func_header.
     def enterFunc_header(self, ctx:CrawLangParser.Func_headerContext):
         pass
@@ -293,6 +302,15 @@ class CrawLangListener(ParseTreeListener):
 
     # Exit a parse tree produced by CrawLangParser#print.
     def exitPrint(self, ctx:CrawLangParser.PrintContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#function_call.
+    def enterFunction_call(self, ctx:CrawLangParser.Function_callContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#function_call.
+    def exitFunction_call(self, ctx:CrawLangParser.Function_callContext):
         pass
 
 
