@@ -8,5 +8,6 @@ int my_fun() {
 
 int main() {
     print(c);
-    //my_fun();
+    my_fun();
+    //print(b);
 }

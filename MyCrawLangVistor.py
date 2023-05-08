@@ -4,16 +4,46 @@ from grammar.CrawLangVisitor import CrawLangVisitor
 
 
 class LangMemory:
+    base_types = ['int', 'char']
+
     global_variables = dict()
     function_scope = list()
+    defined_functions = dict()
 
-    def check_variable(self, variable_name: str):
-        if len(self.function_scope):
-            if self.function_scope[-1].get(variable_name) is not None:
-                return True
-        if self.global_variables.get(variable_name) is not None:
-            return True
-        return False
+    @classmethod
+    def check_variable(cls, variable_name: str):
+        if len(cls.function_scope):
+            if cls.function_scope[-1].get(variable_name) is not None:
+                return cls.function_scope[-1][variable_name]
+        if cls.global_variables.get(variable_name) is not None:
+            return cls.global_variables[variable_name]
+        return None
+
+    @classmethod
+    def assign_variable(cls, variable_name: str, value):
+        if len(cls.function_scope):
+            cls.function_scope[-1][variable_name] = value
+        else:
+            cls.global_variables[variable_name] = value
+
+
+    @classmethod
+    def add_function(cls, fun_name, block):
+        assert cls.defined_functions.get(fun_name) is None
+        cls.defined_functions[fun_name] = block
+
+    @classmethod
+    def call_function(cls, fun_name):
+        assert cls.defined_functions.get(fun_name) is not None
+        return cls.defined_functions[fun_name]
+
+    @classmethod
+    def open_function_scope(cls, scope):
+        cls.function_scope.append(scope)
+
+    @classmethod
+    def close_function_scope(cls):
+        cls.function_scope.pop()
 
 class MyCrawLangVisitor(CrawLangVisitor):
     # Visit a parse tree produced by CrawLangParser#funclist.
@@ -22,15 +52,38 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#function_def.
     def visitFunction_def(self, ctx: CrawLangParser.Function_defContext):
-        return self.visitChildren(ctx)
+        child_gen = ctx.getChildren()
+        fun_name = self.visit(next(child_gen))
+        block = next(child_gen)
+        LangMemory.add_function(fun_name, block)
+        return None
 
     # Visit a parse tree produced by CrawLangParser#func_header.
     def visitFunc_header(self, ctx: CrawLangParser.Func_headerContext):
-        return self.visitChildren(ctx)
+        child_gen = ctx.getChildren()
+        return self.visit(next(child_gen))
 
     # Visit a parse tree produced by CrawLangParser#func_name_decl.
     def visitFunc_name_decl(self, ctx: CrawLangParser.Func_name_declContext):
-        return self.visitChildren(ctx)
+        child_gen = ctx.getChildren()
+        name = next(child_gen).getText()
+        if name in LangMemory.base_types:
+            name = next(child_gen).getText()
+        return name
+
+    # Visit a parse tree produced by CrawLangParser#function_call.
+    def visitFunction_call(self, ctx: CrawLangParser.Function_callContext):
+        child_gen = ctx.getChildren()
+        name = next(child_gen).getText()
+        # область видимости открывается
+        new_scope = dict()
+        LangMemory.open_function_scope(new_scope)
+        # переменные из списка аргументов добавляются в область видимости
+        fun_block = LangMemory.call_function(name)
+        self.visit(fun_block)
+        # область видимости закрывается
+        LangMemory.close_function_scope()
+        return None
 
     # Visit a parse tree produced by CrawLangParser#formal_list.
     def visitFormal_list(self, ctx: CrawLangParser.Formal_listContext):
@@ -115,8 +168,9 @@ class MyCrawLangVisitor(CrawLangVisitor):
     # Visit a parse tree produced by CrawLangParser#primary_expr.
     def visitPrimary_expr(self, ctx: CrawLangParser.Primary_exprContext):
         name = ctx.getText()
-        if LangMemory.global_variables.get(name) is not None:
-            return LangMemory.global_variables[name]
+        exist_val = LangMemory.check_variable(name)
+        if exist_val is not None:
+            return exist_val
         return int(ctx.getText())
 
     # Visit a parse tree produced by CrawLangParser#assignment.
@@ -130,7 +184,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
                 do_assignment = True
             else:
                 if do_assignment:
-                    LangMemory().global_variables[save_name] = value
+                    LangMemory.assign_variable(save_name, value)
                 new_value = value
                 save_name = child.getText()
         return new_value

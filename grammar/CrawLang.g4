@@ -21,7 +21,7 @@ function_def
 
 //главная функция
 main_func
-  : (base_type)? 'main' LPAREN block RPAREN
+  : (base_type)? 'main' LPAREN RPAREN block
   ;
 
 // заголовок функции (тип, имя и лист аргументов)

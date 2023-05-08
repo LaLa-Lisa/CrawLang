@@ -52,7 +52,7 @@ def serializedATN():
         77,75,1,0,0,0,77,78,1,0,0,0,78,80,1,0,0,0,79,77,1,0,0,0,80,81,3,
         4,2,0,81,82,5,0,0,1,82,1,1,0,0,0,83,84,3,6,3,0,84,85,3,16,8,0,85,
         3,1,0,0,0,86,88,3,12,6,0,87,86,1,0,0,0,87,88,1,0,0,0,88,89,1,0,0,
-        0,89,90,5,1,0,0,90,91,5,21,0,0,91,92,3,16,8,0,92,93,5,22,0,0,93,
+        0,89,90,5,1,0,0,90,91,5,21,0,0,91,92,5,22,0,0,92,93,3,16,8,0,93,
         5,1,0,0,0,94,95,3,8,4,0,95,97,5,21,0,0,96,98,3,10,5,0,97,96,1,0,
         0,0,97,98,1,0,0,0,98,99,1,0,0,0,99,100,5,22,0,0,100,7,1,0,0,0,101,
         106,5,15,0,0,102,103,3,12,6,0,103,104,5,15,0,0,104,106,1,0,0,0,105,
@@ -395,12 +395,12 @@ class CrawLangParser ( Parser ):
         def LPAREN(self):
             return self.getToken(CrawLangParser.LPAREN, 0)
 
+        def RPAREN(self):
+            return self.getToken(CrawLangParser.RPAREN, 0)
+
         def block(self):
             return self.getTypedRuleContext(CrawLangParser.BlockContext,0)
 
-
-        def RPAREN(self):
-            return self.getToken(CrawLangParser.RPAREN, 0)
 
         def base_type(self):
             return self.getTypedRuleContext(CrawLangParser.Base_typeContext,0)
@@ -446,9 +446,9 @@ class CrawLangParser ( Parser ):
             self.state = 90
             self.match(CrawLangParser.LPAREN)
             self.state = 91
-            self.block()
-            self.state = 92
             self.match(CrawLangParser.RPAREN)
+            self.state = 92
+            self.block()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
