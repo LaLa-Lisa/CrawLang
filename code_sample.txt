@@ -21,6 +21,25 @@ int fun_for() {
     print(sum);
 }
 
+int final() {
+    base_url = "https://msu.ru";
+    start_url = site(base_url, "Start_group", 4);
+    for (i = 0; i < 100000; i = i + 1) {
+        url = next(start_url);
+        print("I have visited outer site!!!" + url);
+        l = has_subdomain(url);
+        if (l) {
+            base_url_new = "https://" + domain(l);
+            start_url2 = site(base_url_new, base_url_new, 2);
+            for (j = 0; j < 100000; j = j + 1) {
+                url2 = next(start_url2);
+                print("I have visited inner site!!!" + url2);
+            }
+        }
+    }
+    return 0;
+}
+
 int main() {
     b = my_fun( 5 );
     print(b);
