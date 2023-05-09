@@ -163,11 +163,11 @@ arg_list
   ;
 
 print
-  : 'print' LPAREN expr RPAREN SEMICOLON
+  : 'print' LPAREN expr RPAREN
   ;
 
 print_all_stats_func
-  : 'print_all_stats' LPAREN RPAREN SEMICOLON
+  : 'print_all_stats' LPAREN RPAREN
   ;
 
 obj
@@ -178,24 +178,24 @@ obj
   ;
 
 site_func
-  : 'site' LPAREN expr COMMA expr COMMA expr RPAREN SEMICOLON
+  : 'site' LPAREN expr COMMA expr COMMA expr RPAREN
   ;
 
 next_func
-  : 'next' LPAREN expr RPAREN SEMICOLON
+  : 'next' LPAREN expr RPAREN
   ;
 
 domain_func
-  : 'domain' LPAREN expr RPAREN SEMICOLON
+  : 'domain' LPAREN expr RPAREN
   ;
 
 has_subdomain_func
-  : 'has_subdomain' LPAREN expr RPAREN SEMICOLON
+  : 'has_subdomain' LPAREN expr RPAREN
   ;
 
 //вызов функции
 function_call
-  : VALID_VARIABLE_NAME LPAREN (arg_list)? RPAREN SEMICOLON
+  : VALID_VARIABLE_NAME LPAREN (arg_list)? RPAREN
   ;
 
 VALID_VARIABLE_NAME : [a-zA-Z] [a-zA-Z_0-9]* ;
