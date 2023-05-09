@@ -47,6 +47,7 @@ base_type
 statement
   : block
   | print
+  | print_all_stats_func
   | assignment_statement
   | if_stmt
   | for_loop
@@ -163,6 +164,10 @@ arg_list
 
 print
   : 'print' LPAREN expr RPAREN SEMICOLON
+  ;
+
+print_all_stats_func
+  : 'print_all_stats' LPAREN RPAREN SEMICOLON
   ;
 
 obj

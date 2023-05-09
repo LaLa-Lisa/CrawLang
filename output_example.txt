@@ -1,0 +1,247 @@
+start
+line 27:4 missing ';' at 'for'
+line 29:8 missing ';' at 'print'
+line 31:8 missing ';' at 'if'
+line 33:12 missing ';' at 'base_url_new'
+line 35:12 missing ';' at 'for'
+line 37:16 missing ';' at 'print'
+line 47:4 missing ';' at 'print'
+161.83333333333334
+10
+111111111111
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+0
+kek lol
+string print
+I have visited outer site!!!https://spbu.ru/universitet/uchebno-nauchnye-podrazdeleniya
+I have visited inner site!!!https://ifea.spbu.ru
+I have visited inner site!!!https://ifea.spbu.ru
+I have visited inner site!!!https://ifea.spbu.ru/login
+I have visited inner site!!!https://ifea.spbu.ru/
+I have visited inner site!!!https://ifea.spbu.ru/en/
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-студентам.html
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-студентам/general-programm.html
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-студентам/оформление-приглашений-на-въезд-иностранных-граждан-на-территорию-российской-федерации.html
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-студентам/миграционный-учёт-иностранных-граждан,-прибывших-в-спбгу.html
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-студентам/test-center.html
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-студентам/information-for-the-visitors.html
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-нпс.html
+I have visited inner site!!!https://ifea.spbu.ru/студентам-спбгу.html
+I have visited inner site!!!https://ifea.spbu.ru/сотрудникам-спбгу.html
+I have visited inner site!!!https://ifea.spbu.ru/аспиранты.html
+I have visited inner site!!!https://ifea.spbu.ru/news.html
+I have visited inner site!!!https://ifea.spbu.ru/%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%B0%D0%BC-%D1%81%D0%BF%D0%B1%D0%B3%D1%83
+I have visited inner site!!!https://ifea.spbu.ru/%D0%B0%D1%81%D0%BF%D0%B8%D1%80%D0%B0%D0%BD%D1%82%D1%8B
+I have visited inner site!!!https://ifea.spbu.ru/%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC-%D1%81%D0%BF%D0%B1%D0%B3%D1%83
+I have visited inner site!!!https://ifea.spbu.ru/%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC-%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%B0%D0%BC
+I have visited inner site!!!https://ifea.spbu.ru/%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC-%D0%BD%D0%BF%D1%81
+I have visited inner site!!!https://ifea.spbu.ru/%D0%B7%D0%B0%D1%80%D1%83%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B5-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D1%8B
+I have visited inner site!!!https://ifea.spbu.ru/programma-podderzhki-sovmestnykh-proektov-spbgu-i-tekhnologicheskogo-universiteta-imeni-sharifa-iran.html
+I have visited inner site!!!https://ifea.spbu.ru/1103-africa-2023.html
+I have visited inner site!!!https://ifea.spbu.ru/1102-esn-spbu.html
+I have visited inner site!!!https://ifea.spbu.ru/programma-podderzhki-sovmestnykh-proektov-spbgu-i-universiteta-tegerana-iran.html
+I have visited inner site!!!https://ifea.spbu.ru/1099-ministerstvom-nauki-i-vysshego-obrazovaniya-rf-obyavlen-konkurs-na-soiskanie-stipendii-prezidenta-rossijskoj-federatsii-dlya-obucheniya-za-rubezhom-studentov-i-aspirantov-rossijskikh-vuzov-v-2023-2024-uchebnom-godu.html
+I have visited inner site!!!https://ifea.spbu.ru/konferentsii3/1098-ministerstvom-nauki-i-vysshego-obrazovaniya-rf-obyavlen-konkurs-na-soiskanie-stipendii-prezidenta-rossijskoj-federatsii-dlya-obucheniya-za-rubezhom-studentov-i-aspirantov-rossijskikh-vuzov-v-2023-2024-uchebnom-godu.html
+I have visited inner site!!!https://ifea.spbu.ru/1096-hit-2023.html
+I have visited inner site!!!https://ifea.spbu.ru/1094-hust-spbu-2023-2.html
+I have visited inner site!!!https://ifea.spbu.ru/hust-spbu.html
+I have visited inner site!!!https://ifea.spbu.ru/1092-granty-po-programme-stipendium-hungaricum-vengriya.html
+I have visited inner site!!!https://ifea.spbu.ru/konferentsii3/1091-granty-po-programme-stipendium-hungaricum-vengriya.html
+I have visited inner site!!!https://ifea.spbu.ru/1090-obyavlen-konkurs-na-yazykovuyu-stazhirovku-v-knr-po-programme-stipendii-pravitelstva-knr-na-2023-24-uchebnyj-god.html
+I have visited inner site!!!https://ifea.spbu.ru/konferentsii3/1089-obyavlen-konkurs-na-yazykovuyu-stazhirovku-v-knr-po-programme-stipendii-pravitelstva-knr-na-2023-24-uchebnyj-god.html
+I have visited inner site!!!https://ifea.spbu.ru/1088-priem-zayavok-na-soiskanie-stipendii-na-obuchenie-v-magistrature-pekinskogo-universiteta-yenching-academy.html
+I have visited inner site!!!https://ifea.spbu.ru/konferentsii3/1087-priem-zayavok-na-soiskanie-stipendii-na-obuchenie-v-magistrature-pekinskogo-universiteta-yenching-academy-3.html
+I have visited inner site!!!https://ifea.spbu.ru/?start=10
+I have visited inner site!!!https://ifea.spbu.ru/?start=20
+I have visited inner site!!!https://ifea.spbu.ru/?start=30
+I have visited inner site!!!https://ifea.spbu.ru/?start=240
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-студентам
+I have visited inner site!!!https://ifea.spbu.ru/иностранным-нпс
+I have visited inner site!!!https://ifea.spbu.ru/студентам-спбгу
+I have visited inner site!!!https://ifea.spbu.ru/сотрудникам-спбгу
+I have visited inner site!!!https://ifea.spbu.ru/аспиранты
+I have visited inner site!!!https://ifea.spbu.ru/login
+I have visited inner site!!!https://ifea.spbu.ru/en/login.html
+I have visited inner site!!!https://ifea.spbu.ru/login.html?view=reset
+I have visited inner site!!!https://ifea.spbu.ru/login.html?view=remind
+I have visited outer site!!!https://spbu.ru/
+I have visited inner site!!!https://abiturient.spbu.ru
+I have visited inner site!!!https://abiturient.spbu.ru/
+I have visited inner site!!!https://abiturient.spbu.ru/en/
+I have visited inner site!!!https://abiturient.spbu.ru/search/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/targeted-learning/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/spiski-zachislennykh/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/priem-old-bac/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/vstupitelnye-ispytaniya/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/podgotovka-k-ege-/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/#contract_27
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/onlayn-prezentatsii-programm-bak/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/bakalavriat/federalnye-normativnye-akty/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/magistratura/
+I have visited inner site!!!https://abiturient.spbu.ru/medialibrary/ru/2023/mag/mag_prog_VI.pdf
+I have visited inner site!!!https://abiturient.spbu.ru/reception-foreign/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/magistratura/#accordion_32
+I have visited inner site!!!https://abiturient.spbu.ru/programs/magistratura/onlayn-prezentatsii-programm/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/magistratura/onlayn-kursy/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/magistratura/priem-old-mag/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/magistratura/#contact_39
+I have visited inner site!!!https://abiturient.spbu.ru/programs/aspirantura/
+I have visited inner site!!!https://abiturient.spbu.ru/events/?htag=%D0%B4%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82%20%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F
+I have visited inner site!!!https://abiturient.spbu.ru/medialibrary/ru/2023/asp/pravila_priema_asp.pdf
+I have visited inner site!!!https://abiturient.spbu.ru/medialibrary/ru/2023/asp/asp_prog_VI.pdf
+I have visited inner site!!!https://abiturient.spbu.ru/programs/aspirantura/onlayn-prezentatsii-programm-asp/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/aspirantura/priem-old-asp/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/daydzhest-postupleniya-ord/
+I have visited inner site!!!https://abiturient.spbu.ru/medialibrary/ru/2023/ord/pravila_priema.pdf
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/programmy-i-vstupitelnye-ispytaniya/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/onlayn-prezentatsii-programm-ord/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/targeted-learning-ord/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/federalnye-normativnye-akty-ord/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/priem-old-ord/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/ordinatura/testirovanie-spbgu-po-angliyskomu-yazyku-ord/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/akademicheskaya-gimnaziya/
+I have visited inner site!!!https://abiturient.spbu.ru/programs/professional-education/
+I have visited inner site!!!https://abiturient.spbu.ru/info/olympiady-konkursy/
+I have visited inner site!!!https://abiturient.spbu.ru/info/olympiady-konkursy/inye-olimpiady-dlya-shkolnikov/
+I have visited inner site!!!https://abiturient.spbu.ru/info/general-info/
+I have visited inner site!!!https://abiturient.spbu.ru/news/
+I have visited inner site!!!https://abiturient.spbu.ru/events/
+I have visited inner site!!!https://abiturient.spbu.ru/info/general-info/dni-otkrytykh-dverey/
+I have visited inner site!!!https://abiturient.spbu.ru/info/general-info/dni-otkrytykh-dverey/#guidance-event
+I have visited inner site!!!https://abiturient.spbu.ru/info/general-info/dni-otkrytykh-dverey/#international-event
+I have visited inner site!!!https://abiturient.spbu.ru/info/obrazovatelnye-kredity/
+I have visited inner site!!!https://abiturient.spbu.ru/upload/medialibrary/a32/d9iyb6mtjc780h8ovq2gq6v4olzwd18p/2023_ino_events_ru_landing.pdf
+I have visited inner site!!!https://abiturient.spbu.ru/reception-foreign/budget/
+I have visited inner site!!!https://abiturient.spbu.ru/reception-foreign/contract/
+I have visited outer site!!!https://spbu.ru/openuniversity
+I have visited inner site!!!https://dspace.spbu.ru
+I have visited inner site!!!https://dspace.spbu.ru/
+I have visited inner site!!!https://dspace.spbu.ru/community-list
+I have visited inner site!!!https://dspace.spbu.ru/browse?type=dateissued
+I have visited inner site!!!https://dspace.spbu.ru/browse?type=author
+I have visited inner site!!!https://dspace.spbu.ru/browse?type=title
+I have visited inner site!!!https://dspace.spbu.ru/browse?type=subject
+I have visited inner site!!!https://dspace.spbu.ru/policies/index_ru.html
+I have visited inner site!!!https://dspace.spbu.ru/help/index_ru.html
+I have visited inner site!!!https://dspace.spbu.ru/mydspace
+I have visited inner site!!!https://dspace.spbu.ru/subscribe
+I have visited inner site!!!https://dspace.spbu.ru/profile
+I have visited inner site!!!https://dspace.spbu.ru/HowToDSpaceSPbSU1.pdf
+C:\Users\aleka\PycharmProjects\CrawLang\venv\Lib\site-packages\bs4\builder\__init__.py:545: XMLParsedAsHTMLWarning: It looks like you're parsing an XML document using an HTML parser. If this really is an HTML document (maybe it's XHTML?), you can ignore or filter this warning. If it's XML, you should know that using an XML parser will be more reliable. To parse this document as XML, make sure you have the lxml package installed, and pass the keyword argument `features="xml"` into the BeautifulSoup constructor.
+  warnings.warn(
+I have visited inner site!!!https://dspace.spbu.ru/feed/rss_1.0/site
+I have visited inner site!!!https://dspace.spbu.ru/feed/rss_2.0/site
+I have visited inner site!!!https://dspace.spbu.ru/feed/atom_1.0/site
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41443
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41442
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41441
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41440
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41439
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41438
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41437
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41436
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41435
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/41434
+I have visited inner site!!!https://dspace.spbu.ru/
+I have visited inner site!!!https://dspace.spbu.ru/community-list
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/6
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/7
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/13
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/8
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/14
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/11
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/10
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/16
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/12
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/15
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/9
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/17
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/18
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/19
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/25
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/20
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/26
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/23
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/22
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/28
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/24
+I have visited inner site!!!https://dspace.spbu.ru/handle/11701/27
+[================================Start_group================================]
+were visited 155
+not visited, but want to 2096
+all inner domens urls:  7252
+all outer domens urls:  1402
+unique inner domens urls:  125 ['escjournal.spbu.ru', 'dltc.spbu.ru', 'mediation.spbu.ru', 'procourses.spbu.ru', 'vestnikphil.spbu.ru', 'cabinet.spbu.ru', 'regforms.spbu.ru', 'arts.spbu.ru', 'actual-art.spbu.ru', 'rjm.spbu.ru', 'pobeda.spbu.ru', 'edemes.dltc.spbu.ru', 'gsom.spbu.ru', 'mil.spbu.ru', 'math-cs.spbu.ru', 'phil.spbu.ru', 'unipat.spbu.ru', 'apcyb.spbu.ru', 'courses.spbu.ru', 'psy.spbu.ru', 'hr.spbu.ru', 'bb.spbu.ru', 'cryptoveche.dltc.spbu.ru', 'it.spbu.ru', 'soc.spbu.ru', 'students.spbu.ru', 'chem.spbu.ru', 'scandphil.spbu.ru', 'korea.spbu.ru', 'history.spbu.ru', 'portfolio.spbu.ru', 'iranicum.spbu.ru', 'uosd.spbu.ru', 'ethics.spbu.ru', 'events.spbu.ru', 'bio.spbu.ru', 'dev.abiturient.spbu.ru', 'campus.spbu.ru', 'egecenter.spbu.ru', 'law.spbu.ru', 'crystal.spbu.ru', 'o3lab.spbu.ru', 'slavica-petropolitana.spbu.ru', 'medcollege.spbu.ru', 'spbu.ru', 'abiturient.spbu.ru', 'cufts.library.spbu.ru', 'research.rcsoc.spbu.ru', 'library.spbu.ru', 'zdes.spbu.ru', 'cogneuro.spbu.ru', 'luhep.spbu.ru', 'artesliberales.spbu.ru', 'pureportal.spbu.ru', 'dspace.spbu.ru', 'econ.spbu.ru', 'edu.spbu.ru', 'apmath.spbu.ru', 'jf.spbu.ru', 'biocomm.spbu.ru', 'india.spbu.ru', 'ifea.spbu.ru', 'sc.spbu.ru', 'politology.spbu.ru', 'abc.spbu.ru', 'dent.spbu.ru', 'artsjournal.spbu.ru', 'publishing.spbu.ru', 'cab.spbu.ru', 'math.spbu.ru', 'nanomaterials.spbu.ru', 'research.spbu.ru', 'bio-nmr.spbu.ru', 'disser.spbu.ru', '300.spbu.ru', 'pnm.spbu.ru', 'chinese.spbu.ru', 'testingcenter.spbu.ru', 'forum.spbu.ru', 'kamis.spbu.ru', 'economicsjournal.spbu.ru', 'spin.lab.spbu.ru', 'english.spbu.ru', 'timetable.spbu.ru', 'philosophy.spbu.ru', 'campus-free.spbu.ru', 'aasjournal.spbu.ru', 'diffjournal.spbu.ru', 'earth.spbu.ru', 'my.spbu.ru', 'researchpark.spbu.ru', 'serv.spbu.ru', 'sir.spbu.ru', 'lmma.spbu.ru', 'phys.spbu.ru', 'nauka.spbu.ru', 'wiki.spbu.ru', 'tandem.spbu.ru', 'guestbook.spbu.ru', 'pay.spbu.ru', 'jobs.spbu.ru', 'philclass.spbu.ru', 'fund.spbu.ru', 'client.researchpark.spbu.ru', 'vestnik.spbu.ru', 'islab.spbu.ru', 'foreignlang.spbu.ru', 'med.spbu.ru', 'orient.spbu.ru', 'studsovet.spbu.ru', 'online.spbu.ru', 'bestuzhevskie.spbu.ru', 'biomedinstitute.spbu.ru', 'chebyshev.spbu.ru', 'laes.spbu.ru', 'theology.spbu.ru', 'pure.spbu.ru', 'aim.spbu.ru', 'store.spbu.ru', 'agym.spbu.ru', 'olympiada.spbu.ru', 'sport.spbu.ru', 'psrs.spbu.ru', 'solab.spbu.ru', 'ege.spbu.ru']
+unique outer domens urls:  95 ['spvb.ru', 'ingos.ru', 'government.ru', 'open.kakao.com', 'center-intellect.ru', 'artsacademy.ru', 'horizon.spb.ru', 'youtube.com', 'kremlin.ru', 'best-edu.ru', 'petersburger-dialog.ru', 'vk.com', 'gov.spb.ru', 'minobrnauki.gov.ru', 'pravo.gov.ru', '78.ru', 'youtu.be', 'rutube.ru', 'voi.ru', 'sberclass.ru', 'rospotrebnadzor.ru', 'bercut.com', 'artcontract.ru', 'facultetus.ru', 'xn--80aabdcpejeebhqo2afglbd3b9w.xn--p1ai', 'arctic-union.ru', 'музейвнауку.рф', 'gosuslugi.ru', 'journals.kantiana.ru', 'rtr.spb.ru', 'trusted.ru', 'forms.office.com', 'research.com', 'academygps.ru', 'piterets.ru', 'web3tech.ru', 'xuetangx.com', 'deasign.ru', 'narfu.ru', 'vbudushee.ru', 'publication.pravo.gov.ru', 'royalsocietypublishing.org', 'rshu.ru', '1strela.ru', 'stsr.researchpark.ru', 'totaldict.ru', 'school.researchpark.ru', 'sdgs.un.org', 'ibispb.ru', 'ras.ru', 'legalforum.info', 'shard.ru', 'app.researchpark.ru', 'fa.ru', 'files.researchpark.ru', 'proforg.ru', 'rosmintrud.ru', 'sochisirius.ru', 'ru.uarctic.org', 'arctic.gov.ru', 'decentury.io', 'rudn.ru', 'masvt.net', 'nexign.com', 'studyarabic.ru', 'findinamika.com', 'моя-перспектива.рф', 'profcom.spb.ru', 'gosmed.ru', 'fstec.ru', 't.me', 'eduforum.spb.ru', 'guu.ru', 'fmza.ru', 'russoft.org', 'casaderusia.es', 'porarctic.ru', 'vostokgosplan.ru', 'music.yandex.ru', 'openedu.ru', 'doctorantura.ru', 'mindsmith.io', 'ptc.spb.ru', 'kodeks.ru', 'newprospect.ru', 'modernhistory.ru', 'spb.lanit.ru', 'academtalant.ru', 'regulation.gov.ru', 'minjust.gov.ru', 'nano-grad.ru', 'medialing.ru', 'sut.ru', 'zhit-vmeste.ru', 'schoolnano.ru']
+unique documents urls:  10 ['students.spbu.ru/images/2019/stipendii_studentam.pdf', 'edu.spbu.ru/images/data/normativ_acts/local/20180720_7222_1.pdf', 'edu.spbu.ru/images/data/normativ_acts/local/20180228_1192_1.pdf', 'students.spbu.ru/files/2022/pamyatka_studenta.pdf', 'edu.spbu.ru/images/data/normativ_acts/local/20171215_12555_1.pdf', 'pay.spbu.ru/static/file/Payment_assistant.pdf', 'apcyb.spbu.ru/wp-content/uploads/2020-rus-TISURAN-Theory-hidden-oscillations-Control-systems.pdf', 'students.spbu.ru/files/2021/stipendii_studentam.pdf', 'spbu.ru/images/orders/20140409_1887_1.pdf', 'dspace.spbu.ru/bitstream/11701/5570/1/Что%20нужно%20чтобы%20русский%20язык%20стал%20государственным.pdf']
+total number of pages and all links 10905
+number of internal pages 2251
+number of internal subdomains (unique) 125
+total number of links to external resources 1402
+number of unique external resources 95
+number of unique links to doc/docx/pdf files 10
+number of broken pages 1146 unique 270
+[===========================================================================]
+[================================https://ifea.spbu.ru================================]
+were visited 161
+not visited, but want to 636
+all inner domens urls:  2
+all outer domens urls:  2120
+unique inner domens urls:  1 ['ifea.spbu.ru']
+unique outer domens urls:  157 ['uni-tuebingen.de', 'hlu.edu.vn', 'rck.lv', 'hs-gesundheit.de', 'issep.fr', 'uah.es', 'helsinki.fi', 'sdi-muenchen.de', 'international.unina.it', 'ut.ee', 'europa-uni.de', 'neurofarba.unifi.it', 'vk.com', 'regforms.spbu.ru', '78.xn--b1aew.xn--p1ai', 'uca.es', 'uni-bremen.de', 'uni-halle.de', 'ku.edu.tr', 'ubi.pt', 'uni-heidelberg.de', 'jyu.fi', 'austral.edu.ar', 'english.pku.edu.cn', 'tu-ilmenau.de', 'uniba.sk', 'kit.edu', 'jnu.edu.cn', 'usc.es', 'students.spbu.ru', 'u-bordeaux1.fr', 'uvsq.fr', 'uni-corvinus.hu', 'ujn.edu.cn', 'ut.ac.ir', 'web.archive.org', 'britishcouncil.org', 'utu.fi', 'uanl.mx', 'panteion.gr', 'ntua.gr', 'international.unilasalle.fr', 'uczelnia.sgh.waw.pl', 'deusto.es', 'keele.ac.uk', 'fau.eu', 'uni-lj.si', 'campus.spbu.ru', 'su.se', 'uni.wroc.pl', 'unibo.it', 'santannapisa.it', 'facebook.com', 'np.ac.rs', 'ru.nl', 'g-risc.org', 'mib.edu', 'yenchingacademy.netapply.cn', 'english.hust.edu.cn', 'spbu.ru', 'kvs.gov.spb.ru', 'publication.pravo.gov.ru', 'ub.edu', 'abiturient.spbu.ru', 'unical.it', 'tum.de', 'anahuac.mx', 'haw-hamburg.de', 'unideb.hu', 'amu.edu.pl', 'uni-graz.at', 'vnu.edu.vn', 'uniba.it', 'english.hi.is', 'rug.nl', 'mobility.ined.ru', 'drive.google.com', 'wu.ac.at', 'english.jnu.edu.cn', 'eng.spbu.ru', 'en.sharif.edu', 'univ-poitiers.fr', 'edu.spbu.ru', 'hivolda.no', 'uva.nl', 'uj.edu.pl', 'uni-hohenheim.de', 'cpw.uni.opole.pl', 'ru.uj.edu.pl', 'uni-hamburg.de', 'vdu.lt', 'upatras.gr', 'osaka-cu.ac.jp', 'elte.hu', 'upjs.sk', 'uni-greifswald.de', 'nccu.edu.tw', 'unifi.it', 'asu.edu.eg', 'en.hit.edu.cn', 'ed.ac.uk', 'teiath.gr', 'kindai.ac.jp', 'dsps.unifi.it', 'uef.fi', 'fu-berlin.de', 'unil.ch', 'uantwerpen.be', 'ru.ehu.lt', 'en.uw.edu.pl', 'new.huji.ac.il', 'uni-hannover.de', 't.me', 'campuschina.org', 'ntust.edu.tw', 'ruc.edu.cn', 'testingcenter.spbu.ru', 'chula.ac.th', 'lu.lv', 'ua.pt', 'uminho.pt', 'english.spbu.ru', 'uni-bielefeld.de', 'suny.edu', 'uni-jena.de', 'phys.spbu.ru', 'posolspbu.wordpress.com', 'zv.uni-leipzig.de', 'cuni.cz', 'u-bordeaux.com', 'tohoku.ac.jp', 'ec.europa.eu', 'tu-dortmund.de', 'ugr.es', 'uib.no', 'ua.ac.be', 'uu.se', 'itec.mea.gov.in', 'tu-dresden.de', 'vu.lt', 'univ.kiev.ua', 'dsg.unifi.it', '78.мвд.рф', 'auth.gr', 'uni-leipzig.de', 'coimbra-group.eu', 'uni-sofia.bg', 'ntu.edu.tw', 'uni-trier.de', 'lilsi.unifi.it', 'lut.fi', 'pure.spbu.ru', 'ugent.be', 'dmjx.dk', 'neweng.cau.ac.kr', 'uio.no', 'kozminski.edu.pl']
+unique documents urls:  0 []
+total number of pages and all links 2919
+number of internal pages 797
+number of internal subdomains (unique) 1
+total number of links to external resources 2120
+number of unique external resources 157
+number of unique links to doc/docx/pdf files 0
+number of broken pages 897 unique 93
+[====================================================================================]
+[================================https://abiturient.spbu.ru================================]
+were visited 95
+not visited, but want to 952
+all inner domens urls:  114
+all outer domens urls:  1748
+unique inner domens urls:  2 ['abiturient.spbu.ru', 'dev.abiturient.spbu.ru']
+unique outer domens urls:  46 ['mobecan.com', 'sc.spbu.ru', 'ips.pravo.gov.ru', 'yandex.ru', 'russian4foreigners.spbu.ru', 'ifea.spbu.ru', 'campus.spbu.ru', 'guestbook.spbu.ru', 'proftests.spbu.ru', 'egecenter.spbu.ru', 'chemspb.3dn.ru', 'distolymp2.spbu.ru', 'vk.com', 'cabinet.spbu.ru', 'regforms.spbu.ru', 'phl.spbu.ru', 'medcollege.spbu.ru', 'pravo.gov.ru', 'spbu.ru', 'publication.pravo.gov.ru', 'ips.pravo.gov.ru:8080', 'pdmi.ras.ru', 'rutube.ru', 'nic.gov.ru', 't.me', 'historyspb-olymp.spbu.ru', 'olympiada-rki.spbu.ru', 'testingcenter.spbu.ru', 'islod.obrnadzor.gov.ru', 'hcch.net', 'precourses.spbu.ru', 'online.spbu.ru', 'abitur.spbu-hosting.ru', 'gosuslugi.ru', 'school309.ru', 'chem.spbu.ru', 'hist.engine.spbu.ru', 'english.spbu.ru', 'school.astro.spbu.ru', 'physolymp.spb.ru', 'agym.spbu.ru', 'xn--80ajlddcoceflnu7byb2cp.xn--p1ai', 'olympiada.spbu.ru', 'my.spbu.ru', 'kvantorium78.ru', 'psrs.spbu.ru']
+unique documents urls:  6 ['dev.abiturient.spbu.ru/upload/medialibrary/524/4bil3ddvcqe9jhicx8uv0jgm1407y6dx/pravila_priema.pdf', 'dev.abiturient.spbu.ru/files/2023/presentations/int-competition_reglament.pdf', 'dev.abiturient.spbu.ru/upload/medialibrary/861/10jcn830k727hf82f55d2cayiks1kp26/cost_mag_2022.pdf', 'dev.abiturient.spbu.ru/images/2022/2022-lit-concurs-reglament.pdf', 'dev.abiturient.spbu.ru/files/2023/presentations/int-competition_resaults_otbor.pdf', 'dev.abiturient.spbu.ru/files/2022/fed_acts/20121220_1183.pdf']
+total number of pages and all links 2909
+number of internal pages 1047
+number of internal subdomains (unique) 2
+total number of links to external resources 1748
+number of unique external resources 46
+number of unique links to doc/docx/pdf files 6
+number of broken pages 284 unique 89
+[==========================================================================================]
+[================================https://dspace.spbu.ru================================]
+were visited 50
+not visited, but want to 2547
+all inner domens urls:  0
+all outer domens urls:  182
+unique inner domens urls:  0 []
+unique outer domens urls:  8 ['hdl.handle.net', 'it.spbu.ru', 'dspace.org', 'spbu.ru', 'fourmilab.ch', 'cnri.reston.va.us', 'handle.net', 'cygwin.com']
+unique documents urls:  0 []
+total number of pages and all links 2779
+number of internal pages 2597
+number of internal subdomains (unique) 0
+total number of links to external resources 182
+number of unique external resources 8
+number of unique links to doc/docx/pdf files 0
+number of broken pages 354 unique 23
+[======================================================================================]
+(funclist (statement (assignment_statement (assignment c = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 1000)))))))))))) ;)) (function_def (func_header (func_name_decl (base_type int) my_fun) ( (formal_list (base_type int) param) )) (block { (statement (assignment_statement (assignment a = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 18))))) + (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 42)))) * (sign_expr (boolneg_expr (primary_expr (literal 3)))))))))))) ;)) (statement (assignment_statement (assignment b = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 77)))) / (sign_expr (boolneg_expr (primary_expr (literal 6)))))))))))) ;)) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr a)))) + (mul_expr (sign_expr (boolneg_expr (primary_expr b)))) + (mul_expr (sign_expr (boolneg_expr (primary_expr param)))))))))) ) ;)) (statement (return_statement return (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 10))))))))))) ;)) })) (function_def (func_header (func_name_decl (base_type int) fun_for) ( )) (block { (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 111111111111))))))))))) ) ;)) (statement (assignment_statement (assignment sum = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 0)))))))))))) ;)) (statement (assignment_statement (assignment a = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 0)))))))))))) ;)) (statement (assignment_statement (assignment b = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 1)))))))))))) ;)) (statement (for_loop for (loop_cntrl ( (loop_init (assignment i = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 0)))))))))))) ;) (loop_cond (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr i)))))) < (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 10))))))))))) ;) (loop_incr (assignment i = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr i)))) + (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 1))))))))))))) )) (statement (block { (statement (assignment_statement (assignment fib = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr a)))) + (mul_expr (sign_expr (boolneg_expr (primary_expr b))))))))))) ;)) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr fib)))))))))) ) ;)) (statement (assignment_statement (assignment a = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr b))))))))))) ;)) (statement (assignment_statement (assignment b = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr fib))))))))))) ;)) })))) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr sum)))))))))) ) ;)) })) (function_def (func_header (func_name_decl (base_type int) final) ( )) (block { (statement (assignment_statement (assignment base_url = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "https://spbu.ru/universitet/uchebno-nauchnye-podrazdeleniya"))))))))))) ;)) (statement (assignment_statement (assignment start_url = (expr (obj (site_func site ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr base_url)))))))))) , (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "Start_group")))))))))) , (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 4))))))))))) ) ;)))) <missing ';'>)) (statement (for_loop for (loop_cntrl ( (loop_init (assignment i = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 0)))))))))))) ;) (loop_cond (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr i)))))) < (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 3))))))))))) ;) (loop_incr (assignment i = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr i)))) + (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 1))))))))))))) )) (statement (block { (statement (assignment_statement (assignment url = (expr (obj (next_func next ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr start_url)))))))))) ) ;)))) <missing ';'>)) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "I have visited outer site!!!")))) + (mul_expr (sign_expr (boolneg_expr (primary_expr url)))))))))) ) ;)) (statement (assignment_statement (assignment l = (expr (obj (has_subdomain_func has_subdomain ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr url)))))))))) ) ;)))) <missing ';'>)) (statement (if_stmt if ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr l)))))))))) ) (statement (block { (statement (assignment_statement (assignment domain_val = (expr (obj (domain_func domain ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr l)))))))))) ) ;)))) <missing ';'>)) (statement (assignment_statement (assignment base_url_new = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "https://")))) + (mul_expr (sign_expr (boolneg_expr (primary_expr domain_val))))))))))) ;)) (statement (assignment_statement (assignment start_url2 = (expr (obj (site_func site ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr base_url_new)))))))))) , (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr base_url_new)))))))))) , (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 2))))))))))) ) ;)))) <missing ';'>)) (statement (for_loop for (loop_cntrl ( (loop_init (assignment j = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 0)))))))))))) ;) (loop_cond (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr j)))))) < (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 50))))))))))) ;) (loop_incr (assignment j = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr j)))) + (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 1))))))))))))) )) (statement (block { (statement (assignment_statement (assignment url2 = (expr (obj (next_func next ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr start_url2)))))))))) ) ;)))) <missing ';'>)) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "I have visited inner site!!!")))) + (mul_expr (sign_expr (boolneg_expr (primary_expr url2)))))))))) ) ;)) })))) })))) })))) (statement (print_all_stats_func print_all_stats ( ) ;)) (statement (return_statement return (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 0))))))))))) ;)) })) (main_func (base_type int) main ( ) (block { (statement (assignment_statement (assignment b = (expr (function_call my_fun ( (arg_list (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr (literal 5)))))))))))) ) ;))) <missing ';'>)) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr b)))))))))) ) ;)) (statement (function_call fun_for ( ) ;)) (statement (assignment_statement (assignment kek_str = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "kek"))))))))))) ;)) (statement (assignment_statement (assignment lol_str = (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "lol"))))))))))) ;)) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr kek_str)))) + (mul_expr (sign_expr (boolneg_expr (primary_expr " ")))) + (mul_expr (sign_expr (boolneg_expr (primary_expr lol_str)))))))))) ) ;)) (statement (print print ( (expr (lmul_expr (eq_expr (rel_expr (shift_expr (add_expr (mul_expr (sign_expr (boolneg_expr (primary_expr "string print")))))))))) ) ;)) (statement (function_call final ( ) ;)) })) <EOF>)
+done
+
+Process finished with exit code 0

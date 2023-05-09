@@ -189,11 +189,11 @@ class Crawler():
 
     def run(self):
         t_start = time.time()
-        tqdm_ = tqdm()
+        # tqdm_ = tqdm()
         while self.pool_data.urls_to_visit:
             if time.time() - t_start > 66666*60 * 10:
                 break
-            tqdm_.update(1)
+            # tqdm_.update(1)
             url = self.pool_data.urls_to_visit.pop(0)
             logging.info(f'Crawling: {url}')
             try:
@@ -206,6 +206,11 @@ class Crawler():
                 logging.info(f'Rest: {len(self.pool_data.urls_to_visit)}')
 
 
+def print_all_stats():
+    for group_name, pool in CRAWLERS.CRAWLERS.items():
+        print('[================================' + group_name + '================================]')
+        pool.print_stats()
+        print('[================================' + '=' * len(group_name) + '================================]')
 
 
 class CrawlerPool:
@@ -226,13 +231,35 @@ class CrawlerPool:
     def run(self):
         ths = []
         for i in self.crawlers:
-            th = Thread(target=i.run)
+            th = Thread(target=i.run, daemon=True)
             ths.append(th)
             th.start()
 
         for i in ths:
             i.join()
 
+    def print_stats(self):
+        print("were visited", len(self.pool_data.visited_urls))
+        print("not visited, but want to", len(self.pool_data.urls_to_visit))
+        print("all inner domens urls: ", len(self.pool_data.domen_urls))
+        print("all outer domens urls: ", len(self.pool_data.outer_urls))
+        du = get_unique_domens(self.pool_data.domen_urls)
+        print("unique inner domens urls: ", len(du), du)
+        ou = get_unique_domens(self.pool_data.outer_urls)
+        print("unique outer domens urls: ", len(ou), ou)
+
+        ddu = get_unique_documents(self.pool_data.domen_urls)
+        print("unique documents urls: ", len(ddu), ddu)
+
+        print("total number of pages and all links",
+              len(self.pool_data.visited_urls) + len(self.pool_data.urls_to_visit) + len(self.pool_data.domen_urls) + len(self.pool_data.outer_urls))
+        print("number of internal pages", len(self.pool_data.visited_urls) + len(self.pool_data.urls_to_visit))
+        print("number of internal subdomains (unique)", len(du))
+        print("total number of links to external resources", len(self.pool_data.outer_urls))
+        print("number of unique external resources", len(ou))
+        print("number of unique links to doc/docx/pdf files", len(ddu))
+        print("number of broken pages", len(self.pool_data.non_working_url), "unique",
+              len(set(self.pool_data.non_working_url)))
 
 
 class CRAWLERS:
@@ -266,7 +293,7 @@ class SiteObject:
         self.group = self.Pool.group
         self.count = self.Pool.count
 
-        th1 = Thread(target=self.Pool.run)
+        th1 = Thread(target=self.Pool.run, daemon=True)
         th1.start()
 
 
@@ -309,22 +336,20 @@ for (i = 0; i < 100000; i = i + 1;) {
 def main():
     base_url = "https://spbu.ru/universitet/uchebno-nauchnye-podrazdeleniya"
     start_url = site(base_url, group='Start_group', count=3)
-    for i in range(100000):
+    for i in range(3):
         url = _next(start_url)
-        if url == "Done":
-            print("Мы все закончили!!!")
-            return
+
         print('я посетил внешний сайтик', url)
         l = has_subdomain(url)
         if l:
             base_url_new = "https://" + domain(l)
             start_url2 = site(base_url_new, group=base_url_new, count=2)
-            for j in range(100000):
+            for j in range(50):
                 url2 = _next(start_url2)
-                if url2 == "Done":
-                    print("Мы закончили с поддоменом!!!", base_url_new)
-                    break
+
                 print('я посетил внутренний сайтик', url2)
+
+    print_all_stats()
 
 
 if __name__ == '__main__':

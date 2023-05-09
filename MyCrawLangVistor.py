@@ -1,4 +1,4 @@
-from SuperCode import _next, site, has_subdomain, domain
+from SuperCode import _next, site, has_subdomain, domain, print_all_stats
 from grammar.CrawLangParser import CrawLangParser
 from grammar.CrawLangVisitor import CrawLangVisitor
 
@@ -520,6 +520,12 @@ class MyCrawLangVisitor(CrawLangVisitor):
             value = self.visit(child)
             if child.getText() not in ['(', ')', 'print', ';']:
                 print(value)
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#print_all_stats_func.
+    def visitPrint_all_stats_func(self, ctx:CrawLangParser.Print_all_stats_funcContext):
+        print_all_stats()
         return self.visitChildren(ctx)
 
 

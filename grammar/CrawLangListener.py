@@ -323,6 +323,15 @@ class CrawLangListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CrawLangParser#print_all_stats_func.
+    def enterPrint_all_stats_func(self, ctx:CrawLangParser.Print_all_stats_funcContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#print_all_stats_func.
+    def exitPrint_all_stats_func(self, ctx:CrawLangParser.Print_all_stats_funcContext):
+        pass
+
+
     # Enter a parse tree produced by CrawLangParser#obj.
     def enterObj(self, ctx:CrawLangParser.ObjContext):
         pass

@@ -24,7 +24,7 @@ int fun_for() {
 int final() {
     base_url = "https://spbu.ru/universitet/uchebno-nauchnye-podrazdeleniya";
     start_url = site(base_url, "Start_group", 4);
-    for (i = 0; i < 100000; i = i + 1) {
+    for (i = 0; i < 3; i = i + 1) {
         url = next(start_url);
         print("I have visited outer site!!!" + url);
         l = has_subdomain(url);
@@ -32,12 +32,13 @@ int final() {
             domain_val = domain(l);
             base_url_new = "https://" + domain_val;
             start_url2 = site(base_url_new, base_url_new, 2);
-            for (j = 0; j < 100000; j = j + 1) {
+            for (j = 0; j < 50; j = j + 1) {
                 url2 = next(start_url2);
                 print("I have visited inner site!!!" + url2);
             }
         }
     }
+    print_all_stats();
     return 0;
 }
 
