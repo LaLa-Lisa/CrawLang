@@ -117,7 +117,7 @@ primary_expr
   ;
 
 assignment
-  : (VALID_VARIABLE_NAME ASSIGN)? (expr | obj)
+  : (VALID_VARIABLE_NAME ASSIGN)? expr
   ;
 
 boolneg_expr
@@ -154,9 +154,8 @@ lmul_expr
   ;
 
 expr
-  : (lmul_expr ('or' lmul_expr)* ) | function_call
+  : (lmul_expr ('or' lmul_expr)* ) | function_call | obj
   ;
-
 
 arg_list
   : expr ( COMMA expr )*
