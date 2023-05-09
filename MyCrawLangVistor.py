@@ -333,7 +333,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
         child_gen = ctx.getChildren()
         sign = next(child_gen)
         text = sign.getText()
-        if len(text) >= 1 and text[0:1] == '-':
+        if text == '-':
             return -1 * self.visit(next(child_gen))
         return self.visit(sign)
 
