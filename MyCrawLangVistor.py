@@ -14,7 +14,7 @@ class LangMemory:
     @classmethod
     def check_variable(cls, variable_name: str):
         if len(cls.function_scope):
-            for for_s in cls.function_scope[-1]['for']:
+            for for_s in reversed(cls.function_scope[-1]['for']):
                 if for_s.get(variable_name) is not None:
                     return for_s[variable_name]
             if cls.function_scope[-1]['variables'].get(variable_name) is not None:
@@ -26,7 +26,7 @@ class LangMemory:
     @classmethod
     def assign_variable(cls, variable_name: str, value):
         if len(cls.function_scope):
-            for for_s in cls.function_scope[-1]['for']:
+            for for_s in reversed(cls.function_scope[-1]['for']):
                 if for_s.get(variable_name) is not None:
                     for_s[variable_name] = value
                     return
@@ -259,7 +259,8 @@ class MyCrawLangVisitor(CrawLangVisitor):
     def visitPrimaryVariableName(self, ctx:CrawLangParser.PrimaryVariableNameContext):
         name = ctx.getText()
         value = LangMemory.check_variable(name)
-        assert value is not None, "invalid variable name"
+        #print(LangMemory.function_scope)
+        assert value is not None, "invalid variable name " + name
         return value
 
 
