@@ -184,6 +184,31 @@ class CrawLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by CrawLangParser#obj.
+    def visitObj(self, ctx:CrawLangParser.ObjContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#site_func.
+    def visitSite_func(self, ctx:CrawLangParser.Site_funcContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#next_func.
+    def visitNext_func(self, ctx:CrawLangParser.Next_funcContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#domain_func.
+    def visitDomain_func(self, ctx:CrawLangParser.Domain_funcContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#has_subdomain_func.
+    def visitHas_subdomain_func(self, ctx:CrawLangParser.Has_subdomain_funcContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by CrawLangParser#function_call.
     def visitFunction_call(self, ctx:CrawLangParser.Function_callContext):
         return self.visitChildren(ctx)

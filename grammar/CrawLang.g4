@@ -167,9 +167,26 @@ print
   ;
 
 obj
-  : fun_1
-  | fun_2
-  | fun_3
+  : site_func
+  | next_func
+  | domain_func
+  | has_subdomain_func
+  ;
+
+site_func
+  : 'site' LPAREN expr COMMA expr COMMA expr RPAREN SEMICOLON
+  ;
+
+next_func
+  : 'next' LPAREN expr RPAREN SEMICOLON
+  ;
+
+domain_func
+  : 'domain' LPAREN expr RPAREN SEMICOLON
+  ;
+
+has_subdomain_func
+  : 'has_subdomain' LPAREN expr RPAREN SEMICOLON
   ;
 
 //вызов функции

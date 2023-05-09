@@ -323,6 +323,51 @@ class CrawLangListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by CrawLangParser#obj.
+    def enterObj(self, ctx:CrawLangParser.ObjContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#obj.
+    def exitObj(self, ctx:CrawLangParser.ObjContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#site_func.
+    def enterSite_func(self, ctx:CrawLangParser.Site_funcContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#site_func.
+    def exitSite_func(self, ctx:CrawLangParser.Site_funcContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#next_func.
+    def enterNext_func(self, ctx:CrawLangParser.Next_funcContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#next_func.
+    def exitNext_func(self, ctx:CrawLangParser.Next_funcContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#domain_func.
+    def enterDomain_func(self, ctx:CrawLangParser.Domain_funcContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#domain_func.
+    def exitDomain_func(self, ctx:CrawLangParser.Domain_funcContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#has_subdomain_func.
+    def enterHas_subdomain_func(self, ctx:CrawLangParser.Has_subdomain_funcContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#has_subdomain_func.
+    def exitHas_subdomain_func(self, ctx:CrawLangParser.Has_subdomain_funcContext):
+        pass
+
+
     # Enter a parse tree produced by CrawLangParser#function_call.
     def enterFunction_call(self, ctx:CrawLangParser.Function_callContext):
         pass
