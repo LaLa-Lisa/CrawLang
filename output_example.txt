@@ -1,11 +1,4 @@
 start
-line 27:4 missing ';' at 'for'
-line 29:8 missing ';' at 'print'
-line 31:8 missing ';' at 'if'
-line 33:12 missing ';' at 'base_url_new'
-line 35:12 missing ';' at 'for'
-line 37:16 missing ';' at 'print'
-line 47:4 missing ';' at 'print'
 161.83333333333334
 10
 111111111111
