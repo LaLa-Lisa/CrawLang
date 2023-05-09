@@ -512,7 +512,12 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#site_func.
     def visitSite_func(self, ctx:CrawLangParser.Site_funcContext):
-        return self.visitChildren(ctx)
+        args = []
+        for child in ctx.getChildren():
+            value = self.visit(child)
+            if child.getText() not in ['(', ')', 'next', ';', ',']:
+                args.append(value)
+        return site(*args)
 
 
     # Visit a parse tree produced by CrawLangParser#next_func.
@@ -520,8 +525,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
         for child in ctx.getChildren():
             value = self.visit(child)
             if child.getText() not in ['(', ')', 'next', ';']:
-                next(value)
-        return self.visitChildren(ctx)
+                return _next(value)
 
 
     # Visit a parse tree produced by CrawLangParser#domain_func.
@@ -529,8 +533,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
         for child in ctx.getChildren():
             value = self.visit(child)
             if child.getText() not in ['(', ')', 'domain', ';']:
-                next(value)
-        return self.visitChildren(ctx)
+                return domain(value)
 
 
     # Visit a parse tree produced by CrawLangParser#has_subdomain_func.
@@ -538,5 +541,4 @@ class MyCrawLangVisitor(CrawLangVisitor):
         for child in ctx.getChildren():
             value = self.visit(child)
             if child.getText() not in ['(', ')', 'has_subdomain', ';']:
-                next(value)
-        return self.visitChildren(ctx)
+                return has_subdomain(value)
