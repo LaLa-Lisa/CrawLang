@@ -47,4 +47,6 @@ int main() {
     kek_str = "kek";
     lol_str = "lol";
     print(kek_str + " " + lol_str);
+    print("string print");
+    final();
 }

@@ -4,7 +4,7 @@ from grammar.CrawLangVisitor import CrawLangVisitor
 
 
 class LangMemory:
-    base_types = ['int', 'char', 'float']
+    base_types = ['int', 'char', 'float', 'str']
 
     global_variables = dict()
     function_scope = list()
@@ -38,7 +38,6 @@ class LangMemory:
                 cls.function_scope[-1]['for'][-1][variable_name] = value
         else:
             cls.global_variables[variable_name] = value
-
 
     @classmethod
     def add_function(cls, fun_name, block, arg_list):
@@ -317,6 +316,9 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#boolneg_expr.
     def visitBoolneg_expr(self, ctx: CrawLangParser.Boolneg_exprContext):
+        check = self.visit(next(ctx.getChildren()))
+        if not isinstance(check, str | int | float):
+            return check
         text = ctx.getText()
         res = self.visitChildren(ctx)
         if isinstance(res, str):
@@ -327,6 +329,9 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#sign_expr.
     def visitSign_expr(self, ctx: CrawLangParser.Sign_exprContext):
+        check = self.visit(next(ctx.getChildren()))
+        if not isinstance(check, str | int | float):
+            return check
         text = ctx.getText()
         res = self.visitChildren(ctx)
         if isinstance(res, str):
@@ -337,6 +342,10 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#mul_expr.
     def visitMul_expr(self, ctx: CrawLangParser.Mul_exprContext):
+        check = self.visit(next(ctx.getChildren()))
+        if not isinstance(check, str | int | float):
+            return check
+
         mult = 1
         is_mult = True
 
@@ -357,7 +366,11 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#add_expr.
     def visitAdd_expr(self, ctx: CrawLangParser.Add_exprContext):
-        if isinstance(self.visit(next(ctx.getChildren())), str):
+        check = self.visit(next(ctx.getChildren()))
+        if not isinstance(check, str | int | float):
+            return check
+
+        if isinstance(check, str):
             new_str = ""
             for child in ctx.getChildren():
                 value = self.visit(child)
@@ -456,7 +469,11 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#lmul_expr.
     def visitLmul_expr(self, ctx: CrawLangParser.Lmul_exprContext):
-        first_value = self.visit(next(ctx.getChildren()))
+        check = self.visit(next(ctx.getChildren()))
+        if not isinstance(check, str | int | float):
+            return check
+
+        first_value = check
         if isinstance(first_value, str):
             assert ctx.getChildCount() == 1, 'string logical multiplication'
             return first_value
