@@ -330,16 +330,12 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#sign_expr.
     def visitSign_expr(self, ctx: CrawLangParser.Sign_exprContext):
-        check = self.visit(next(ctx.getChildren()))
-        if not isinstance(check, str | int | float):
-            return check
-        text = ctx.getText()
-        res = self.visitChildren(ctx)
-        if isinstance(res, str):
-            return res
-        if len(text) > 1 and text[0:1] == '-':
-            return -1 * res
-        return res
+        child_gen = ctx.getChildren()
+        sign = next(child_gen)
+        text = sign.getText()
+        if len(text) >= 1 and text[0:1] == '-':
+            return -1 * self.visit(next(child_gen))
+        return self.visit(sign)
 
     # Visit a parse tree produced by CrawLangParser#mul_expr.
     def visitMul_expr(self, ctx: CrawLangParser.Mul_exprContext):
