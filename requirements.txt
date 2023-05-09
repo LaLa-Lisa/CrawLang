@@ -1,0 +1,6 @@
+requests~=2.30.0
+validators~=0.20.0
+bs4~=0.0.1
+beautifulsoup4~=4.12.2
+antlr4-python3-runtime
+antlr4-tools
