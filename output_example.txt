@@ -1,18 +1,7 @@
 start
 161.83333333333334
-10
-111111111111
-1
-2
-3
-5
-8
-13
-21
-34
-55
-89
-0
+0.3333333333333333
+144
 kek lol
 string print
 I have visited outer site!!!https://spbu.ru/universitet/uchebno-nauchnye-podrazdeleniya
