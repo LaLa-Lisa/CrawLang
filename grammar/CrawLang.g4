@@ -117,7 +117,7 @@ primary_expr
   ;
 
 assignment
-  : (VALID_VARIABLE_NAME ASSIGN)? expr
+  : (VALID_VARIABLE_NAME ASSIGN)? (expr | obj)
   ;
 
 boolneg_expr
@@ -164,6 +164,12 @@ arg_list
 
 print
   : 'print' LPAREN expr RPAREN SEMICOLON
+  ;
+
+obj
+  : fun_1
+  | fun_2
+  | fun_3
   ;
 
 //вызов функции
