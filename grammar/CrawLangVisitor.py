@@ -104,8 +104,23 @@ class CrawLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by CrawLangParser#primary_expr.
-    def visitPrimary_expr(self, ctx:CrawLangParser.Primary_exprContext):
+    # Visit a parse tree produced by CrawLangParser#primaryVariableName.
+    def visitPrimaryVariableName(self, ctx:CrawLangParser.PrimaryVariableNameContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#primaryLiteral.
+    def visitPrimaryLiteral(self, ctx:CrawLangParser.PrimaryLiteralContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#primaryString.
+    def visitPrimaryString(self, ctx:CrawLangParser.PrimaryStringContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#primaryExpression.
+    def visitPrimaryExpression(self, ctx:CrawLangParser.PrimaryExpressionContext):
         return self.visitChildren(ctx)
 
 
@@ -171,6 +186,21 @@ class CrawLangVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by CrawLangParser#function_call.
     def visitFunction_call(self, ctx:CrawLangParser.Function_callContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#litINT.
+    def visitLitINT(self, ctx:CrawLangParser.LitINTContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#litCHAR.
+    def visitLitCHAR(self, ctx:CrawLangParser.LitCHARContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#litFLOAT.
+    def visitLitFLOAT(self, ctx:CrawLangParser.LitFLOATContext):
         return self.visitChildren(ctx)
 
 

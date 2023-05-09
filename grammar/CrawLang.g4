@@ -110,9 +110,10 @@ return_statement
   ;
 
 primary_expr
-  : VALID_VARIABLE_NAME
-  | LITERAL
-  | (LPAREN expr RPAREN )
+  : VALID_VARIABLE_NAME     #primaryVariableName
+  | literal                 #primaryLiteral
+  | STRING                  #primaryString
+  | (LPAREN expr RPAREN )   #primaryExpression
   ;
 
 assignment
@@ -172,12 +173,18 @@ function_call
 
 VALID_VARIABLE_NAME : [a-zA-Z] [a-zA-Z_0-9]* ;
 
-LITERAL: (INT | CHAR | FLOAT);
+literal
+  : INT     #litINT
+  | CHAR    #litCHAR
+  | FLOAT   #litFLOAT
+  ;
 
 // типы данных нашего языка
 INT : [0-9]+;
-CHAR : [a-zA-Z];
+CHAR : '\''[a-zA-Z]'\'';
 FLOAT : [0-9]+([.][0-9]+)?;
+STRING: '"' (ESC|.)*? '"';
+fragment ESC : '\\"' | '\\\\' ;
 
 COMMA : ',' ;
 SEMICOLON  : ';' ;

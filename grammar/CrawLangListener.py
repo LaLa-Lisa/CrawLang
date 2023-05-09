@@ -179,12 +179,39 @@ class CrawLangListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by CrawLangParser#primary_expr.
-    def enterPrimary_expr(self, ctx:CrawLangParser.Primary_exprContext):
+    # Enter a parse tree produced by CrawLangParser#primaryVariableName.
+    def enterPrimaryVariableName(self, ctx:CrawLangParser.PrimaryVariableNameContext):
         pass
 
-    # Exit a parse tree produced by CrawLangParser#primary_expr.
-    def exitPrimary_expr(self, ctx:CrawLangParser.Primary_exprContext):
+    # Exit a parse tree produced by CrawLangParser#primaryVariableName.
+    def exitPrimaryVariableName(self, ctx:CrawLangParser.PrimaryVariableNameContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#primaryLiteral.
+    def enterPrimaryLiteral(self, ctx:CrawLangParser.PrimaryLiteralContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#primaryLiteral.
+    def exitPrimaryLiteral(self, ctx:CrawLangParser.PrimaryLiteralContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#primaryString.
+    def enterPrimaryString(self, ctx:CrawLangParser.PrimaryStringContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#primaryString.
+    def exitPrimaryString(self, ctx:CrawLangParser.PrimaryStringContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#primaryExpression.
+    def enterPrimaryExpression(self, ctx:CrawLangParser.PrimaryExpressionContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#primaryExpression.
+    def exitPrimaryExpression(self, ctx:CrawLangParser.PrimaryExpressionContext):
         pass
 
 
@@ -302,6 +329,33 @@ class CrawLangListener(ParseTreeListener):
 
     # Exit a parse tree produced by CrawLangParser#function_call.
     def exitFunction_call(self, ctx:CrawLangParser.Function_callContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#litINT.
+    def enterLitINT(self, ctx:CrawLangParser.LitINTContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#litINT.
+    def exitLitINT(self, ctx:CrawLangParser.LitINTContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#litCHAR.
+    def enterLitCHAR(self, ctx:CrawLangParser.LitCHARContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#litCHAR.
+    def exitLitCHAR(self, ctx:CrawLangParser.LitCHARContext):
+        pass
+
+
+    # Enter a parse tree produced by CrawLangParser#litFLOAT.
+    def enterLitFLOAT(self, ctx:CrawLangParser.LitFLOATContext):
+        pass
+
+    # Exit a parse tree produced by CrawLangParser#litFLOAT.
+    def exitLitFLOAT(self, ctx:CrawLangParser.LitFLOATContext):
         pass
 
 

@@ -3,7 +3,7 @@ c = 1000;
 int my_fun(int param) {
     a = 18 + 42 * 3;
     b = 77 / 6;
-    print( a + b  + param );
+    print( a + b + param );
     return 10;
 }
 int fun_for() {
@@ -16,6 +16,7 @@ int fun_for() {
         print(fib);
         a = b;
         b = fib;
+        //if (i > 5) return 10;
     }
     print(sum);
 }
@@ -24,4 +25,7 @@ int main() {
     b = my_fun( 5 );
     print(b);
     fun_for();
+    kek_str = "kek";
+    lol_str = "lol";
+    print(kek_str + " " + lol_str);
 }

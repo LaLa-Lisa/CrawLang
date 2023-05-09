@@ -256,12 +256,47 @@ class MyCrawLangVisitor(CrawLangVisitor):
         LangMemory.assign_variable('return', return_val)
         return self.visitChildren(ctx)
 
-    # Visit a parse tree produced by CrawLangParser#primary_expr.
-    def visitPrimary_expr(self, ctx: CrawLangParser.Primary_exprContext):
+    # Visit a parse tree produced by CrawLangParser#primaryVariableName.
+    def visitPrimaryVariableName(self, ctx:CrawLangParser.PrimaryVariableNameContext):
         name = ctx.getText()
-        exist_val = LangMemory.check_variable(name)
-        if exist_val is not None:
-            return exist_val
+        value = LangMemory.check_variable(name)
+        assert value is not None, "invalid variable name"
+        return value
+
+
+    # Visit a parse tree produced by CrawLangParser#primaryLiteral.
+    def visitPrimaryLiteral(self, ctx:CrawLangParser.PrimaryLiteralContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by CrawLangParser#primaryString.
+    def visitPrimaryString(self, ctx:CrawLangParser.PrimaryStringContext):
+        value = ctx.getText()[1:-1]
+        return value
+
+
+    # Visit a parse tree produced by CrawLangParser#primaryExpression.
+    def visitPrimaryExpression(self, ctx:CrawLangParser.PrimaryExpressionContext):
+        child_gen = ctx.getChildren()
+        lparen_keyword = next(child_gen).getText()
+        assert lparen_keyword == '('
+
+        value = self.visit(next(child_gen))
+
+        rparen_keyword = next(child_gen).getText()
+        assert rparen_keyword == ')'
+        return value
+
+    # Visit a parse tree produced by CrawLangParser#litINT.
+    def visitLitINT(self, ctx: CrawLangParser.LitINTContext):
+        return int(ctx.getText())
+
+    # Visit a parse tree produced by CrawLangParser#litCHAR.
+    def visitLitCHAR(self, ctx: CrawLangParser.LitCHARContext):
+        return str(ctx.getText())
+
+    # Visit a parse tree produced by CrawLangParser#litFLOAT.
+    def visitLitFLOAT(self, ctx: CrawLangParser.LitFLOATContext):
         return float(ctx.getText())
 
     # Visit a parse tree produced by CrawLangParser#assignment.
@@ -283,23 +318,32 @@ class MyCrawLangVisitor(CrawLangVisitor):
     # Visit a parse tree produced by CrawLangParser#boolneg_expr.
     def visitBoolneg_expr(self, ctx: CrawLangParser.Boolneg_exprContext):
         text = ctx.getText()
+        res = self.visitChildren(ctx)
+        if isinstance(res, str):
+            return res
         if len(text) > 3 and text[0:3] == 'not':
-            return not self.visitChildren(ctx)
-        return self.visitChildren(ctx)
+            return not res
+        return res
 
     # Visit a parse tree produced by CrawLangParser#sign_expr.
     def visitSign_expr(self, ctx: CrawLangParser.Sign_exprContext):
         text = ctx.getText()
+        res = self.visitChildren(ctx)
+        if isinstance(res, str):
+            return res
         if len(text) > 1 and text[0:1] == '-':
-            return -1 * self.visitChildren(ctx)
-        return self.visitChildren(ctx)
+            return -1 * res
+        return res
 
     # Visit a parse tree produced by CrawLangParser#mul_expr.
     def visitMul_expr(self, ctx: CrawLangParser.Mul_exprContext):
         mult = 1
         is_mult = True
+
         for child in ctx.getChildren():
             value = self.visit(child)
+            if isinstance(value, str):
+                return value
             if child.getText() == '*':
                 is_mult = True
             elif child.getText() == '/':
@@ -313,6 +357,15 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#add_expr.
     def visitAdd_expr(self, ctx: CrawLangParser.Add_exprContext):
+        if isinstance(self.visit(next(ctx.getChildren())), str):
+            new_str = ""
+            for child in ctx.getChildren():
+                value = self.visit(child)
+                if child.getText() != '+':
+                    assert child.getText() != '-', 'string subtraction'
+                    new_str += value
+            return new_str
+
         add = 0
         is_add = True
         for child in ctx.getChildren():
@@ -330,6 +383,10 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#shift_expr.
     def visitShift_expr(self, ctx: CrawLangParser.Shift_exprContext):
+        first_value = self.visit(next(ctx.getChildren()))
+        if isinstance(first_value, str):
+            assert ctx.getChildCount() == 1
+            return first_value
         shift = 0
         not_shifted = True
         shift_left = True
@@ -351,48 +408,59 @@ class MyCrawLangVisitor(CrawLangVisitor):
 
     # Visit a parse tree produced by CrawLangParser#rel_expr.
     def visitRel_expr(self, ctx: CrawLangParser.Rel_exprContext):
+        child_gen = ctx.getChildren()
+
+        first_value = self.visit(next(child_gen))
+        if ctx.getChildCount() == 1:
+            return first_value
+
+        action = next(child_gen).getText()
+        assert action in ['>', '<', '>=', '<=']
+
+        second_value = self.visit(next(child_gen))
+
         grater = 0
-        action = '+'
-        for child in ctx.getChildren():
-            value = self.visit(child)
-            if child.getText() in ['>', '<', '>=', '<=']:
-                action = child.getText()
-            else:
-                match action:
-                    case '+':
-                        grater += value
-                    case '>':
-                        grater = grater > value
-                    case '<':
-                        grater = grater < value
-                    case '>=':
-                        grater = grater >= value
-                    case '<=':
-                        grater = grater <= value
+        match action:
+            case '>':
+                grater = first_value > second_value
+            case '<':
+                grater = first_value < second_value
+            case '>=':
+                grater = first_value >= second_value
+            case '<=':
+                grater = first_value <= second_value
 
         return grater
 
     # Visit a parse tree produced by CrawLangParser#eq_expr.
     def visitEq_expr(self, ctx: CrawLangParser.Eq_exprContext):
+        child_gen = ctx.getChildren()
+
+        first_value = self.visit(next(child_gen))
+        if ctx.getChildCount() == 1:
+            return first_value
+
+        action = next(child_gen).getText()
+        assert action in ['==', '!=']
+
+        second_value = self.visit(next(child_gen))
+
         equal = 0
-        action = '+'
-        for child in ctx.getChildren():
-            value = self.visit(child)
-            if child.getText() in ['==', '!=']:
-                action = child.getText()
-            else:
-                match action:
-                    case '+':
-                        equal += value
-                    case '==':
-                        grater = equal == value
-                    case '!=':
-                        grater = equal != value
+        match action:
+            case '==':
+                grater = first_value == second_value
+            case '!=':
+                grater = first_value != second_value
 
         return equal
 
     # Visit a parse tree produced by CrawLangParser#lmul_expr.
     def visitLmul_expr(self, ctx: CrawLangParser.Lmul_exprContext):
+        first_value = self.visit(next(ctx.getChildren()))
+        if isinstance(first_value, str):
+            assert ctx.getChildCount() == 1, 'string logical multiplication'
+            return first_value
+
         lmult = 0
         first = True
         for child in ctx.getChildren():
