@@ -515,7 +515,7 @@ class MyCrawLangVisitor(CrawLangVisitor):
         args = []
         for child in ctx.getChildren():
             value = self.visit(child)
-            if child.getText() not in ['(', ')', 'next', ';', ',']:
+            if child.getText() not in ['(', ')', 'site', ';', ',']:
                 args.append(value)
         return site(*args)
 
